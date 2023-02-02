@@ -231,12 +231,18 @@ header {
   height: 80vh;
 }
 
+h1 {
+  margin: 0;
+}
+
 footer {
   background-color: tomato;
   height: 10vh;
 }
-footer p {
+
+p {
   text-align: center;
+  margin: 0;
 }
 
 section {
