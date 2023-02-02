@@ -1,6 +1,6 @@
 @use "setup";
-@use "header";
-@use "footer";
+@use "header" as *;
+@use "footer" as *;
 
 
 
@@ -12,10 +12,4 @@ section {
     background-color: antiquewhite;
     border: 5px solid black;
     height: 10vh;
-}
-h1, h2, p {
-    margin: 0;
-}
-h2 {
-    margin: 0 auto;
 }
