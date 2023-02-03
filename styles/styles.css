@@ -225,3 +225,37 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+html {
+  font-size: 125%;
+}
+
+body {
+  background-color: #F6F6F6;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header.headerHome {
+  height: 100vh;
+  background-image: url("../assets/home-1.jpeg");
+  background-position: center;
+  background-size: cover;
+}
