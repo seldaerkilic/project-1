@@ -260,6 +260,22 @@ a:hover {
   color: #64a604;
 }
 
+p {
+  font-size: 18px;
+}
+
+button {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  width: 30%;
+  height: 9%;
+  background-color: #64a604;
+  color: #F6F6F6;
+  border: none;
+  line-height: 36px;
+}
+
 .headerHome {
   height: 100vh;
   background-image: url("./assets/home-1.jpeg");
@@ -331,4 +347,47 @@ h1 {
   background-image: url("./assets/contact-1.jpeg");
   background-position: center;
   background-size: cover;
+}
+
+.flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flexContainer div {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recipes {
+  padding: 50px;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  line-height: 24px;
+  font-size: 1.2rem;
+}
+
+.recipes p {
+  font-family: "Lora", serif;
+  text-align: center;
+  padding: 20px;
+  width: 80%;
+  font-size: 0.75rem;
 }

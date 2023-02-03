@@ -1,3 +1,5 @@
+@use "setup";
+
 // HOME Page Header
 .headerHome {
     height: 100vh;
@@ -50,3 +52,5 @@ h1 {
     background-position: center;
     background-size: cover;
 }
+
+// *************

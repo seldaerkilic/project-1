@@ -35,8 +35,17 @@ a {
 a:hover {
     color: #64a604;
 }
-
-// Typography styles
-
-$titleFont: 'Raleway', sans-serif;
-$quoteFont: 'Lora', serif;
+p {
+    font-size: 18px;
+}
+button {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    width: 30%;
+    height: 9%;
+    background-color: #64a604;
+    color: #F6F6F6;
+    border: none;
+    line-height: 36px;
+}

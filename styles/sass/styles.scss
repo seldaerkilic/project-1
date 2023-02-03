@@ -9,6 +9,39 @@
 // font-family: 'Raleway', sans-serif;
 
 // Colors:
-// dark green: 64a604
-// light green: dded9a
+// dark green: #64a604
+// light green: #dded9a
+
+
+// Home Page flexContainer
+
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexContainer div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.recipes {
+    
+    padding: 50px;
+}
+h2 {
+    font-family: 'Raleway', sans-serif;
+    line-height: 24px;
+    font-size: 1.2rem;
+}
+.recipes p {
+    font-family: 'Lora', serif;
+    text-align: center;
+    padding: 20px;
+    width: 80%;
+    font-size: 0.75rem;
+}
+
 
