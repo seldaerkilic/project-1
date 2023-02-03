@@ -13,14 +13,182 @@
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome</h1>
+    <!-- Header section -->
+    <header id="headerHome">
+        <nav>
+            <ul>
+                <h1 class="logo">
+                    <a href="#headerHome">DELICIOUS</a>
+                </h1>
+                <li>
+                    <a href="#headerHome">HOME</a>
+                </li>
+                <li>
+                    <a href="#about">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#recipeSection">RECIPES</a>
+                </li>
+                <li>
+                    <a href="#nutrition">NUTRITION</a>
+                </li>
+                <li>
+                    <a href="./blog.html">BLOG</a>
+                </li>
+                <li>
+                    <a href="#">SHOP</a>
+                </li>
+                <li>
+                    <a href="./contact.html">CONTACT</a>
+                </li>
+                <li class="checkout">
+                    <a href="">
+                        <img src="./assets/checkout-icon.png" alt="shopping bag icon for checkout page">
+                    </a>
+                </li>
+                <li class="searchBar">
+                    <a href="">
+                        <img src="./assets/search-icon.png" alt="magnifying glass icon for in-site search">
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <section>
-        <h2>OMG Continuous Deploy is Amazing!!!</h2>
+
+    <!-- Recipes section -->
+    <section class="recipeSection">
+        <div class="flexWrapper">
+            <div class="recipes" id="recipes">
+                <h2>MOST POPULAR RECIPES</h2>
+                <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.</p>
+                <button>VIEW RECIPES</button>
+            </div>
+            <div></div>
+            <div></div>
+            <div class="nutrition" id="nutrition">
+                <div>
+                    <h3>VEGETARIAN</h3>
+                    <img src="./assets/vegetarian-icon.png" alt="lemon representing vegetarian options">
+                    <p>Veggies es bonus vobis, proinde vos postulo essum magis kohirabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                </div>
+                <div>
+                    <h3>APPETIZERS</h3>
+                    <img src="./assets/appetizers-icon.png" alt="fork and knife representing appetizers">
+                    <p>Veggies es bonus vobis, proinde vos postulo essum magis kohirabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                </div>
+                <div>
+                    <h3>DESSERTS</h3>
+                    <img src="./assets/desserts-icon.png" alt="coffee mug representing desserts">
+                    <p>Veggies es bonus vobis, proinde vos postulo essum magis kohirabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                </div>
+                <div>
+                    <h3>DRINKS</h3>
+                    <img src="./assets/drinks-icon.png" alt="martini glass representing drinks">
+                    <p>Veggies es bonus vobis, proinde vos postulo essum magis kohirabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                </div>
+                <div>
+                    <h3>SALADS</h3>
+                    <img src="./assets/salads-icon.png" alt="leaf representing salads">
+                    <p>Veggies es bonus vobis, proinde vos postulo essum magis kohirabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                </div>
+                <div>
+                    <h3>SIDE DISHES</h3>
+                    <img src="./assets/side-dishes-icon.png" alt="spoon representing side dishes">
+                    <p>Veggies es bonus vobis, proinde vos postulo essum magis kohirabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <!-- About section -->
+    <section class="about" id="about">
+        <div class="aboutUs">
+            <img src="./assets/top-food-icon.png" alt="food text surrounded by a fancy food place yummm">
+            <img src="./assets/home-4.jpeg" alt="a cozy place with empty, bronze color tables and chairs">
+            <h2>OUR RESTAURANTS</h2>
+            <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+        </div>
+    </section>
+
+    <!-- Gallery section -->
+    <section class="gallery">
+        <div class="imgContainer">
+            <ul>
+                <li>
+                    <img src="./assets/home-5.jpeg" alt="colorful plate of a pesto dish">
+                </li>
+                <li>
+                    <img src="./assets/home-6.jpeg" alt="a mini hamburger on a plate with green onion sprinkles">
+                </li>
+                <li>
+                    <img src="./assets/home-7.jpeg" alt="cleaned red onions, beets and greens ready for salad">
+                </li>
+                <li>
+                    <img src="./assets/home-8.jpeg" alt="little pink cake with flowers on top">
+                </li>
+                <li>
+                    <img src="./assets/home-9.jpeg" alt="blueberry cookies on top of baking sheet, small cup of blueberries and some pink flowers">
+                </li>
+                <li>
+                    <img src="./assets/home-10.jpeg" alt="a bowl of yogurth sauce with some greens inside">
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Quotations section - probably slider -->
+    <section class="quotations">
+        <div class="clients">
+            <h2>HUNGRY CLIENTS</h2>
+            <p>Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine sprng onion bush tomato kale radicchio turnip chicory salsify pea sprouts fava bean. Dandelion zucchini burdock yarrow chickpea dandelion.</p>
+            <img class="qMarkOpen" src="./assets/q-mark-opening.png" alt="opening quotation mark">
+            <img class="qMarkClose" src="./assets/q-mark-closing.png" alt="closing quotation mark">
+            <img class="arrowLeft" src="./assets/left-slider.png" alt="slider arrow to left">
+            <img class="arrowRight" src="./assets/right-slider.png" alt="slider arrow to right">
+        </div>
+    </section>
+
+    <!-- Footer section -->
     <footer>
-        <p>Copyright 2023</p>
+        <section class="footer">
+            <div class="footerFlex">
+                <div>
+                    <h4 class="footerLogo">DELICIOUS</h4>
+                    <p>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussel sprout cabbage.</p>
+                    <p>A delicious restaurant Toronto, Ontario</p>
+                    <p>
+                        <a href="">yum@food.com</a>
+                    </p>
+                    <p>+1 234 567 8910</p>
+                </div>
+
+                <div>
+                    <h4>RECENT POSTS</h4>
+                    <p><a href="#">Beetroot water spinach okra water</a></p>
+                    <p><a href="#">Chestnut ricebean pea catsear courgette</a></p>
+                    <p><a href="#">Summer purslane spinach arugula pea</a></p>
+                    <p><a href="#">Tatsoi aubergine spring onion bush</a></p>
+                    <p><a href="#">Tomato kale radicchio turnip chicory</a></p>
+                    <p><a href="#">Salsify pea sprouts fava bean</a></p>
+                </div>
+
+                <div>
+                    <h4>SUBSCRIBE NOW</h4>
+                    <form action="submit" method="post">
+                        <legend>Get all of our newest recipes immediately in your inbox!</legend>
+                        <label for="email"></label>
+                        <input type="Email" name="email" placeholder="Enter your email">
+                        <button type="submit"><img src="./assets/right-slider.png" alt="arrow showing right"></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>Copyrights 2023 by <span>POLAR</span> All Rights reserved</p>
+            </div>
+        </section>
     </footer>
+
+
 </body>
 </html>

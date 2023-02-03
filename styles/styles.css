@@ -225,28 +225,3 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-header {
-  background-color: olive;
-  height: 80vh;
-}
-
-h1 {
-  margin: 0;
-}
-
-footer {
-  background-color: tomato;
-  height: 10vh;
-}
-
-p {
-  text-align: center;
-  margin: 0;
-}
-
-section {
-  background-color: antiquewhite;
-  border: 5px solid black;
-  height: 10vh;
-}
