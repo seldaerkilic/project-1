@@ -396,7 +396,7 @@ h2 {
   font-size: 0.75rem;
 }
 
-.nutrition {
+.flexContainer .nutrition {
   background-color: #ededed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -410,10 +410,15 @@ h2 {
 }
 
 .nutrition div {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100px;
   text-align: left;
   -ms-flex-preferred-size: auto;
       flex-basis: auto;
+  position: relative;
 }
 
 .nutrition h3 {
@@ -421,11 +426,15 @@ h2 {
   font-size: 0.8rem;
   margin: 0;
   text-align: left;
+  position: left;
 }
 
 .nutrition img {
   width: 50px;
   height: 50px;
+  position: absolute;
+  bottom: 80px;
+  left: 35px;
 }
 
 .nutrition p {
@@ -433,7 +442,7 @@ h2 {
   font-size: 0.6rem;
 }
 
-.aboutUs {
+div.aboutUs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -447,27 +456,31 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 80px;
 }
 
-.aboutUs img {
+.aboutUs img.restaurant {
   width: 40%;
   height: auto;
   margin: 20px;
+  position: relative;
 }
 
 img.foodIcon {
   width: 150px;
   height: 150px;
-  position: relative;
+  position: absolute;
   margin: 0;
+  z-index: 1;
 }
 
 .aboutUs p {
   margin: 0 auto;
   text-align: center;
   font-family: "Lora", serif;
-  font-size: 0.6rem;
+  font-size: 0.75rem;
   width: 60%;
+  padding: 20px;
 }
 
 div.imgContainer ul {
@@ -485,4 +498,36 @@ div.imgContainer ul {
 
 .imgContainer li {
   width: 33.3333333333%;
+}
+
+section.quotations {
+  background-color: #dded9a;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+section.quotations p {
+  padding: 50px;
+  font-family: "Lora", serif;
+  font-style: italic;
+}
+section.quotations h2 {
+  margin: 0 auto;
+  text-align: center;
+}
+section.quotations .clients img {
+  width: 100px;
+  height: 100px;
 }

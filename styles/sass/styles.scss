@@ -45,7 +45,7 @@ h2 {
 
 // Nutrition part of flexContainer
 
-.nutrition {
+.flexContainer .nutrition {
     background-color: #ededed;
     display: flex;
     flex-direction: row;
@@ -53,55 +53,67 @@ h2 {
 
 }
 .nutrition div {
-    // width: 50%;
+    flex-direction: column;
     height: 100px;
     text-align: left;
     flex-basis: auto;
-    // padding: 50px;
+    position: relative;
+
 }
 .nutrition h3 {
     font-family: 'Raleway', sans-serif;
     font-size: 0.8rem;
     margin: 0;
     text-align: left;
+    position: left;
 }
 .nutrition img {
     width: 50px;
     height: 50px;
-
+    position: absolute;
+    bottom: 80px;
+    left: 35px;
 }
 .nutrition p {
     width: 50%;
     font-size: 0.6rem;
 }
 
+
 // ABOUT Us Section
 
-.aboutUs {
+div.aboutUs {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 80px;
 }
 
-.aboutUs img {
+.aboutUs img.restaurant {
     width: 40%;
     height: auto;
     margin: 20px;
+    position: relative;
 }
 
 img.foodIcon {
     width: 150px;
     height: 150px;
-    position: relative;
+    position: absolute;
     margin: 0;
+    // top: 15px;
+    // left: 980px;
+    z-index: 1;
 }
 .aboutUs p {
     margin: 0 auto;
     text-align: center;
     font-family: 'Lora', serif;
-    font-size: 0.6rem;
+    font-size: 0.75rem;
     width: 60%;
+    padding: 20px;
+
 }
 
 // Gallery section
@@ -117,3 +129,34 @@ div.imgContainer ul {
     width: calc(100% / 3);
 
 }
+
+
+// Clients quotation section
+section.quotations {
+    background-color: #dded9a;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+    p {
+        padding: 50px;
+        font-family: 'Lora', serif;
+        font-style: italic;
+    }
+    h2 {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .clients img {
+            width: 100px;
+            height: 100px;
+        }
+
+}
+
+
+
