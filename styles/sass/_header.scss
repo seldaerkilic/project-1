@@ -1,6 +1,36 @@
-header.headerHome {
+.headerHome {
     height: 100vh;
-    background-image: url("../assets/home-1.jpeg");
+    background-image: url("./assets/home-1.jpeg");
     background-position: center;
     background-size: cover;
+}
+.navFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 96vw;
+    height: 10%;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+h1 {
+    margin: 0;
+    padding-left: 2vw;
+    font-family: 'Raleway', sans-serif;
+}
+.navBar li {
+    padding: 10px;
+    width: auto;
+    height: 80%;
+    font-family: 'Raleway', sans-serif;
+}
+.checkout img,
+.searchBar img {
+    height: 30px;
 }
