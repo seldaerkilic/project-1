@@ -318,3 +318,17 @@ h1 {
 .searchBar img {
   height: 30px;
 }
+
+.headerBlog {
+  height: 60vh;
+  background-image: url("./assets/blog-1.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+
+.headerContact {
+  height: 60vh;
+  background-image: url("./assets/contact-1.jpeg");
+  background-position: center;
+  background-size: cover;
+}
