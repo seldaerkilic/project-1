@@ -1,0 +1,24 @@
+.contactBody {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 5%;
+
+    p {
+        font-size: 0.65rem;
+        color: #999999;
+    }
+    h3 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 0.8rem;
+    }
+    strong {
+        color: black;
+        font-family: 'Raleway', sans-serif;
+    }
+    .contactForm {
+        max-width: 50%;
+        
+
+    }
+}
