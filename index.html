@@ -58,47 +58,71 @@
     <!-- Recipes section -->
     <section class="recipeSection">
         <div class="flexContainer">
-            <div class="recipes" id="recipes">
+            <div class="recipes gridItem" id="recipes">
                 <h2>MOST POPULAR RECIPES</h2>
                 <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.</p>
                 <button>VIEW RECIPES</button>
             </div>
-            <div>
+            <div class="gridItem">
                 <img src="./styles/assets/home-2.jpeg" alt="green leaves with purple color veins">
             </div>
-            <div>
+            <div class="gridItem">
                 <img src="./styles/assets/home-3.jpeg" alt="beef taco with salad next to lime slices">
             </div>
-            <div class="nutrition" id="nutrition">
-                <div>
-                    <h3>VEGETARIAN</h3>
-                    <img src="./styles/assets/vegetarian-icon.png" alt="lemon representing vegetarian options">
-                    <p>Veggies es bonus vobis, proinde vos postulo essum magis kohirabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+            <div class="nutrition gridItem" id="nutrition">
+                <div class="cardNutri">
+                    <div class="imgNutri">
+                        <img src="./styles/assets/vegetarian-icon.png" alt="lemon representing vegetarian options">
+                    </div>
+                    <div class="contentNutri">
+                        <h3>VEGETARIAN</h3>
+                        <p>Veggies es bonus vobis, proinde vos postulo essum magis kohirabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                    </div>
                 </div>
-                <div>
-                    <h3>APPETIZERS</h3>
-                    <img src="./styles/assets/appetizers-icon.png" alt="fork and knife representing appetizers">
-                    <p>Veggies es bonus vobis, proinde vos postulo essum magis kohirabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                <div class="cardNutri">
+                    <div class="imgNutri">
+                        <img src="./styles/assets/appetizers-icon.png" alt="fork and knife representing appetizers">
+                    </div>
+                    <div class="contentNutri">
+                        <h3>APPETIZERS</h3>
+                        <p>Veggies es bonus vobis, proinde vos postulo essum magis kohirabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                    </div>
                 </div>
-                <div>
-                    <h3>DESSERTS</h3>
-                    <img src="./styles/assets/desserts-icon.png" alt="coffee mug representing desserts">
-                    <p>Veggies es bonus vobis, proinde vos postulo essum magis kohirabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                <div class="cardNutri">
+                    <div class="imgNutri">
+                        <img src="./styles/assets/desserts-icon.png" alt="coffee mug representing desserts">
+                    </div>
+                    <div class="contentNutri">
+                        <h3>DESSERTS</h3>
+                        <p>Veggies es bonus vobis, proinde vos postulo essum magis kohirabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                    </div>
                 </div>
-                <div>
-                    <h3>DRINKS</h3>
-                    <img src="./styles/assets/drinks-icon.png" alt="martini glass representing drinks">
-                    <p>Veggies es bonus vobis, proinde vos postulo essum magis kohirabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                <div class="cardNutri">
+                    <div class="imgNutri">
+                        <img src="./styles/assets/drinks-icon.png" alt="martini glass representing drinks">
+                    </div>
+                    <div class="contentNutri">
+                        <h3>DRINKS</h3>
+                        <p>Veggies es bonus vobis, proinde vos postulo essum magis kohirabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                    </div>
                 </div>
-                <div>
-                    <h3>SALADS</h3>
-                    <img src="./styles/assets/salads-icon.png" alt="leaf representing salads">
-                    <p>Veggies es bonus vobis, proinde vos postulo essum magis kohirabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                <div class="cardNutri">
+                    <div class="imgNutri">
+                        <img src="./styles/assets/salads-icon.png" alt="leaf representing salads">
+                    </div>
+                    <div class="contentNutri">
+                        <h3>SALADS</h3>
+                        <p>Veggies es bonus vobis, proinde vos postulo essum magis kohirabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                    </div>
                 </div>
-                <div>
-                    <h3>SIDE DISHES</h3>
-                    <img src="./styles/assets/side-dishes-icon.png" alt="spoon representing side dishes">
-                    <p>Veggies es bonus vobis, proinde vos postulo essum magis kohirabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                <div class="cardNutri">
+                    <div class="imgNutri">
+                        <img src="./styles/assets/side-dishes-icon.png" alt="spoon representing side dishes">
+                    </div>
+                    <div class="contentNutri">
+                        <h3>SIDE DISHES</h3>
+                        <p>Veggies es bonus vobis, proinde vos postulo essum magis kohirabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -107,8 +131,10 @@
     <!-- About section -->
     <section class="about" id="about">
         <div class="aboutUs">
-            <img class="foodIcon" src="./styles/assets/top-food-icon.png" alt="food text surrounded by a fancy food place yummm">
-            <img class="restaurant" src="./styles/assets/home-4.jpeg" alt="a cozy place with empty, bronze color tables and chairs">
+            <div class="imgAbout">
+                <img class="foodIcon" src="./styles/assets/top-food-icon.png" alt="food text surrounded by a fancy food place yummm">
+                <img class="restaurant" src="./styles/assets/home-4.jpeg" alt="a cozy place with empty, bronze color tables and chairs">
+            </div>
             <h2>OUR RESTAURANTS</h2>
             <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
         </div>

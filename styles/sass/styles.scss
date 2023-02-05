@@ -20,15 +20,16 @@
     flex-wrap: wrap;
 }
 
-.flexContainer div {
+.flexContainer .gridItem {
     width: 50%;
     display: flex;
-    flex-direction: column;
+  
     justify-content: center;
     align-items: center;
 }
 .recipes {
     padding: 50px;
+    flex-direction: column;
 }
 h2 {
     font-family: 'Raleway', sans-serif;
@@ -43,23 +44,18 @@ h2 {
     font-size: 0.75rem;
 }
 
+
+
 // Nutrition part of flexContainer
 
 .flexContainer .nutrition {
-    background-color: #ededed;
+    padding: 5%;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-
+    justify-content: space-between;
+    background-color: #ededed;
 }
-.nutrition div {
-    flex-direction: column;
-    height: 100px;
-    text-align: left;
-    flex-basis: auto;
-    position: relative;
 
-}
 .nutrition h3 {
     font-family: 'Raleway', sans-serif;
     font-size: 0.8rem;
@@ -70,13 +66,26 @@ h2 {
 .nutrition img {
     width: 50px;
     height: 50px;
-    position: absolute;
-    bottom: 80px;
-    left: 35px;
+    // position: absolute;
+    // bottom: 80px;
+    // left: 35px;
 }
 .nutrition p {
-    width: 50%;
+    // width: 50%;
     font-size: 0.6rem;
+}
+.cardNutri {
+    display: flex;
+    width: 40%;
+    
+}
+.imgNutri {
+    display: flex;
+    justify-content: flex-start;
+}
+.contentNutri {
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 
@@ -90,11 +99,10 @@ div.aboutUs {
     padding: 80px;
 }
 
-.aboutUs img.restaurant {
-    width: 40%;
-    height: auto;
-    margin: 20px;
+div.imgAbout {
     position: relative;
+    height: 100%;
+    width: 60%;
 }
 
 img.foodIcon {
@@ -102,9 +110,9 @@ img.foodIcon {
     height: 150px;
     position: absolute;
     margin: 0;
-    // top: 15px;
-    // left: 980px;
-    z-index: 1;
+    transform: translate(50%, -50%);
+    top: 0;
+    right: 0;
 }
 .aboutUs p {
     margin: 0 auto;
@@ -123,11 +131,14 @@ div.imgContainer ul {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
+    margin: 0;
 }
 
 .imgContainer li {
     width: calc(100% / 3);
-
+}
+.imgContainer li img {
+    display: block;
 }
 
 

@@ -361,15 +361,11 @@ h1 {
       flex-wrap: wrap;
 }
 
-.flexContainer div {
+.flexContainer .gridItem {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -380,6 +376,10 @@ h1 {
 
 .recipes {
   padding: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 h2 {
@@ -397,28 +397,16 @@ h2 {
 }
 
 .flexContainer .nutrition {
-  background-color: #ededed;
+  padding: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.nutrition div {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100px;
-  text-align: left;
-  -ms-flex-preferred-size: auto;
-      flex-basis: auto;
-  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #ededed;
 }
 
 .nutrition h3 {
@@ -432,14 +420,31 @@ h2 {
 .nutrition img {
   width: 50px;
   height: 50px;
-  position: absolute;
-  bottom: 80px;
-  left: 35px;
 }
 
 .nutrition p {
-  width: 50%;
   font-size: 0.6rem;
+}
+
+.cardNutri {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+}
+
+.imgNutri {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.contentNutri {
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 div.aboutUs {
@@ -459,11 +464,10 @@ div.aboutUs {
   padding: 80px;
 }
 
-.aboutUs img.restaurant {
-  width: 40%;
-  height: auto;
-  margin: 20px;
+div.imgAbout {
   position: relative;
+  height: 100%;
+  width: 60%;
 }
 
 img.foodIcon {
@@ -471,7 +475,10 @@ img.foodIcon {
   height: 150px;
   position: absolute;
   margin: 0;
-  z-index: 1;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  top: 0;
+  right: 0;
 }
 
 .aboutUs p {
@@ -494,10 +501,15 @@ div.imgContainer ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0;
+  margin: 0;
 }
 
 .imgContainer li {
   width: 33.3333333333%;
+}
+
+.imgContainer li img {
+  display: block;
 }
 
 section.quotations {
