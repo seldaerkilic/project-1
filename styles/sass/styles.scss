@@ -146,27 +146,64 @@ div.imgContainer ul {
 section.quotations {
     background-color: #dded9a;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 100%;
-    
-    p {
-        padding: 50px;
+    .contentQuote {
+        max-width: 70%;
+    }
+    .contentQuote p {
+        padding: 20px;
         font-family: 'Lora', serif;
         font-style: italic;
+        text-align: center;
+        height: 100%;
+        width: 65%;
+        margin: 0 auto;
+        position: relative;
     }
     h2 {
         margin: 0 auto;
         text-align: center;
+        padding: 50px;
     }
 
     .clients img {
             width: 100px;
             height: 100px;
         }
+    .clients {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .qMarkOpen {
+        position: absolute;
+        transform: translate(80%, -20%);
+    }
+    .qMarkClose {
+        position: absolute;
+        transform: translate(-300%, -70%);
+        right: 0;
+    }
+    .slider {
+        height: 100%;
+        width: 50%;
+        padding: 3%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .arrowLeft {
+            width: 100px;
+            height: 100px;
+        }
+        .arrowRight {
+            width: 100px;
+            height: 100px;
+        }
+    }
 }
 
 
