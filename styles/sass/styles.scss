@@ -42,6 +42,7 @@ h2 {
     padding: 20px;
     width: 80%;
     font-size: 0.75rem;
+    color: #999999;
 }
 
 
@@ -52,7 +53,7 @@ h2 {
     padding: 5%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #ededed;
 }
 
@@ -101,16 +102,20 @@ div.aboutUs {
 
 div.imgAbout {
     position: relative;
-    height: 100%;
+    height:80%;
     width: 60%;
+    padding: 50px 100px;
 }
+// div.imgAbout .restaurant {
+//     width: 50%;
+//     margin: 0 auto;
+// }
 
 img.foodIcon {
     width: 150px;
     height: 150px;
     position: absolute;
-    margin: 0;
-    transform: translate(50%, -50%);
+    transform: translate(-10%, -20%);
     top: 0;
     right: 0;
 }
@@ -119,9 +124,9 @@ img.foodIcon {
     text-align: center;
     font-family: 'Lora', serif;
     font-size: 0.75rem;
-    width: 60%;
+    width: 70%;
     padding: 20px;
-
+    color: #999999;
 }
 
 // Gallery section
@@ -151,7 +156,7 @@ section.quotations {
         max-width: 70%;
     }
     .contentQuote p {
-        padding: 20px;
+        padding: 30px;
         font-family: 'Lora', serif;
         font-style: italic;
         text-align: center;
@@ -163,7 +168,7 @@ section.quotations {
     h2 {
         margin: 0 auto;
         text-align: center;
-        padding: 50px;
+        padding: 50px 50px 20px 50px;
     }
 
     .clients img {
@@ -205,6 +210,4 @@ section.quotations {
         }
     }
 }
-
-
 

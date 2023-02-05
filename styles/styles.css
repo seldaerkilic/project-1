@@ -394,6 +394,7 @@ h2 {
   padding: 20px;
   width: 80%;
   font-size: 0.75rem;
+  color: #999999;
 }
 
 .flexContainer .nutrition {
@@ -403,9 +404,8 @@ h2 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: #ededed;
 }
 
@@ -466,17 +466,17 @@ div.aboutUs {
 
 div.imgAbout {
   position: relative;
-  height: 100%;
+  height: 80%;
   width: 60%;
+  padding: 50px 100px;
 }
 
 img.foodIcon {
   width: 150px;
   height: 150px;
   position: absolute;
-  margin: 0;
-  -webkit-transform: translate(50%, -50%);
-          transform: translate(50%, -50%);
+  -webkit-transform: translate(-10%, -20%);
+          transform: translate(-10%, -20%);
   top: 0;
   right: 0;
 }
@@ -486,8 +486,9 @@ img.foodIcon {
   text-align: center;
   font-family: "Lora", serif;
   font-size: 0.75rem;
-  width: 60%;
+  width: 70%;
   padding: 20px;
+  color: #999999;
 }
 
 div.imgContainer ul {
@@ -521,7 +522,7 @@ section.quotations .contentQuote {
   max-width: 70%;
 }
 section.quotations .contentQuote p {
-  padding: 20px;
+  padding: 30px;
   font-family: "Lora", serif;
   font-style: italic;
   text-align: center;
@@ -533,7 +534,7 @@ section.quotations .contentQuote p {
 section.quotations h2 {
   margin: 0 auto;
   text-align: center;
-  padding: 50px;
+  padding: 50px 50px 20px 50px;
 }
 section.quotations .clients img {
   width: 100px;
