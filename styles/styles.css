@@ -353,6 +353,105 @@ h1 {
   background-size: cover;
 }
 
+section.footer {
+  background-color: #333333;
+  font-family: "Raleway", sans-serif;
+  padding-top: 50px;
+}
+section.footer .footerFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+section.footer .footerFlex .footerBlock .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+section.footer .footerFlex h4 {
+  color: #f6f6f6;
+  line-height: 24px;
+  font-size: 0.8rem;
+  padding: 50px 0px;
+  margin: 0;
+}
+section.footer .footerFlex p, section.footer .footerFlex legend, section.footer .footerFlex label {
+  font-family: "Lora", serif;
+  color: #999999;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  font-size: 0.65rem;
+  max-width: 250px;
+}
+section.footer .footerFlex .footerLogo {
+  font-weight: bold;
+  font-size: 2.2rem;
+  padding: 50px 0px;
+  margin: 0;
+  color: #64a604;
+}
+section.footer .footerFlex form legend {
+  padding: 20px 0px;
+}
+section.footer .footerFlex form input {
+  position: relative;
+  height: 50px;
+  background-color: #999999;
+  border: none;
+}
+section.footer .footerFlex form label {
+  font-style: italic;
+  position: absolute;
+  color: #f6f6f6;
+  z-index: 1;
+  padding: 10px;
+}
+section.footer .footerFlex form button {
+  position: absolute;
+  height: 50px;
+  width: 60px;
+}
+section.footer .footerFlex form button img {
+  position: absolute;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  margin: 0 auto;
+}
+
+.flexSocials .socials img {
+  height: 30px;
+  width: 30px;
+}
+
+section.copyright {
+  background-color: #2E2E2E;
+  margin: 0;
+  padding: 20px;
+}
+
+.copyright p {
+  font-family: "Raleway", sans-serif;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  font-size: 0.65rem;
+  margin: 0;
+  color: #999999;
+}
+
 .flexContainer {
   display: -webkit-box;
   display: -ms-flexbox;

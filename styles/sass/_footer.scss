@@ -1,2 +1,92 @@
 @use "setup";
 
+section.footer {
+    background-color: #333333;
+    font-family: 'Raleway', sans-serif;
+    padding-top: 50px;
+
+    .footerFlex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .footerBlock {
+            .socials {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+            }
+            
+        }
+        h4 {
+            color: #f6f6f6;
+            line-height: 24px;
+            font-size: 0.8rem;
+            padding: 50px 0px;
+            margin: 0;
+        }
+        p, legend, label {
+            font-family: 'Lora', serif;
+            color: #999999;
+            line-height: 24px;
+            letter-spacing: 0.3px;
+            font-size: 0.65rem;
+            max-width: 250px;
+        }
+        
+        .footerLogo {
+            font-weight: bold;
+            font-size: 2.2rem;
+            padding: 50px 0px;
+            margin: 0;
+            color: #64a604;
+        }
+        form {
+            legend {
+                padding: 20px 0px;
+            }
+            input {
+            position: relative;
+            height: 50px;
+            background-color: #999999;
+            border: none;
+            }
+            label {
+            font-style: italic;
+            position: absolute;
+            color: #f6f6f6;
+            z-index: 1;
+            padding: 10px;
+            // transform: translate(100%);
+            }
+            button {
+                position: absolute;
+                height: 50px;
+                width: 60px;
+                img {
+                    position: absolute;
+                    transform: translate(0%, -50%);
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+.flexSocials .socials img {
+    height: 30px;
+    width: 30px;
+}
+section.copyright  {
+    background-color: #2E2E2E;
+    margin: 0;
+    padding: 20px;
+}
+.copyright {
+    p {
+        font-family: 'Raleway', sans-serif;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+        font-size: 0.65rem;
+        margin: 0;
+        color: #999999;
+    }
+}
