@@ -55,47 +55,54 @@
         </nav>
     </header>
 
+    <main>
     <!-- Contact form section -->
-    <div class="wrapper contactBody">
-        <div class="contactForm">
+    <section class="form">
+        <div class="wrapper contactForm">
             <h2>DROP US A LINE</h2>
-            <form action="submit" method="get">
-                <label for="name">Your Name</label>
-                <input type="text" name="name">
+            <form class="contact" action="submit" method="get">
+                <label for="name"></label>
+                <input type="text" name="name" id="name" placeholder="Your Name">
 
-                <label for="email">Your Email</label>
-                <input type="email" name="email">
+                <label for="email"></label>
+                <input type="email" name="email" id="email" placeholder="Your Email">
 
-                <label for="subject">Subject</label>
-                <input type="text" name="subject">
+                <div class="fullWidthInputs">
+                    <label for="subject"></label>
+                    <input type="text" name="subject" id="subject" placeholder="Subject">
 
-                <label for="message">Message</label>
-                <input type="textarea" name="message">
+                    <label for="message"></label>
+                    <input type="text" name="message" class="message" id="message" placeholder="Message">
+                </div>
 
                 <a href="mailto:yum@food.com">SEND MESSAGE</a>
                 <img src="./styles/assets/right-slider.png" alt="send message arrow">
             </form>
-        </div>
+    </section>
 
-        <div class="contactDetails">
-            <div class="details">
-                <h2>CONTACT DETAILS</h2>
-                <P>Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale.</P>
+    <!-- Contact details aside -->
+    <aside class="details">
+            <div class="wrapper contactDetails">
+                <div class="details">
+                    <h2>CONTACT DETAILS</h2>
+                    <P>Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale.</P>
+                </div>
+                <div class="hours">
+                    <h3>WORKING HOURS</h3>
+                    <p><strong>MON-FRI:</strong> 08:00am - 05:30pm</p>
+                    <p>Not working on Saturday and Sunday !</p>
+                </div>
+                <div class="info">
+                    <h3>CONTACT INFO</h3>
+                    <p>A delicious restaurant Toronto, Ontario</p>
+                    <a href="mailto:yum@food.com">yum@food.com</a>
+                    <p>+1 234 567 8910</p>
+                </div>
             </div>
-            <div class="hours">
-                <h3>WORKING HOURS</h3>
-                <p><strong>MON-FRI:</strong> 08:00am - 05:30pm</p>
-                <p>Not working on Saturday and Sunday !</p>
-            </div>
-            <div class="info">
-                <h3>CONTACT INFO</h3>
-                <p>A delicious restaurant Toronto, Ontario</p>
-                <a href="">yum@food.com</a>
-                <p>+1 234 567 8910</p>
-            </div>
-        </div>
-    </div>
+    </aside>
 
+
+    </main>
 
     <!-- Above footer cover photo -->
     <section class="footerCover">
@@ -116,7 +123,7 @@
                     <p>A delicious restaurant <br>Toronto, Ontario</p>
                     <hr style="height:1px;width:250px;background-color:#999999;border:none;margin:0;">
                     <p>
-                        <a href="">yum@food.com</a>
+                        <a href="mailto:yum@food.com">yum@food.com</a>
                     </p>
                     <hr style="height:1px;width:250px;background-color:#999999;border:none;margin:0;">
                     <p>+1 234 567 8910</p>

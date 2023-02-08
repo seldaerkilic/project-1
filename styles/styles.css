@@ -260,6 +260,10 @@ a:hover {
   color: #64a604;
 }
 
+a:focus {
+  color: #64a604;
+}
+
 p {
   font-size: 18px;
 }
@@ -278,6 +282,10 @@ button {
 
 span {
   color: #64a604;
+}
+
+h1 a {
+  font-size: 2rem;
 }
 
 .headerHome {
@@ -351,6 +359,134 @@ h1 {
   background-image: url("./assets/contact-1.jpeg");
   background-position: center;
   background-size: cover;
+}
+
+main {
+  background-color: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.form {
+  background-color: white;
+  width: 60%;
+  height: 100%;
+}
+
+aside {
+  width: 40%;
+}
+aside p {
+  width: 60%;
+}
+
+.contactForm {
+  padding: 60px 0;
+  margin: 0 auto;
+}
+
+form.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+form.contact img {
+  width: 30px;
+  height: 30px;
+}
+form.contact h2 {
+  width: 100%;
+  padding-bottom: 20px;
+}
+form.contact input {
+  border: none;
+  background-color: #f6f6f6;
+  margin: 20px 0;
+  height: 40px;
+  width: calc(50% - 5px);
+}
+form.contact label {
+  z-index: 1;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.5rem;
+}
+form.contact input::-webkit-input-placeholder {
+  color: #999999;
+  font-size: 0.55rem;
+}
+form.contact input::-moz-placeholder {
+  color: #999999;
+  font-size: 0.55rem;
+}
+form.contact input:-ms-input-placeholder {
+  color: #999999;
+  font-size: 0.55rem;
+}
+form.contact input::-ms-input-placeholder {
+  color: #999999;
+  font-size: 0.55rem;
+}
+form.contact input::placeholder {
+  color: #999999;
+  font-size: 0.55rem;
+}
+
+p {
+  font-size: 0.65rem;
+  color: #999999;
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
+}
+
+a {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.6rem;
+  text-decoration: none;
+}
+
+strong {
+  color: black;
+  font-family: "Raleway", sans-serif;
+}
+
+.fullWidthInputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+.fullWidthInputs input {
+  width: 100%;
+}
+.fullWidthInputs .message {
+  height: 200px;
 }
 
 section.footer {
@@ -440,7 +576,7 @@ section.footer .footerFlex form button img {
 section.copyright {
   background-color: #2E2E2E;
   margin: 0;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .copyright p {
@@ -450,32 +586,6 @@ section.copyright {
   font-size: 0.65rem;
   margin: 0;
   color: #999999;
-}
-
-.contactBody {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0 auto;
-  padding: 5%;
-}
-.contactBody p {
-  font-size: 0.65rem;
-  color: #999999;
-}
-.contactBody h3 {
-  font-family: "Raleway", sans-serif;
-  font-size: 0.8rem;
-}
-.contactBody strong {
-  color: black;
-  font-family: "Raleway", sans-serif;
-}
-.contactBody .contactForm {
-  max-width: 50%;
 }
 
 .flexContainer {
