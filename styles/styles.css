@@ -418,7 +418,8 @@ form.contact h2 {
   width: 100%;
   padding-bottom: 20px;
 }
-form.contact input {
+form.contact input,
+form.contact textarea {
   border: none;
   background-color: #f6f6f6;
   margin: 20px 0;
@@ -430,25 +431,41 @@ form.contact label {
   font-family: "Raleway", sans-serif;
   font-size: 0.5rem;
 }
-form.contact input::-webkit-input-placeholder {
+form.contact input::-webkit-input-placeholder, form.contact textarea::-webkit-input-placeholder {
   color: #999999;
   font-size: 0.55rem;
 }
-form.contact input::-moz-placeholder {
+form.contact input::-moz-placeholder, form.contact textarea::-moz-placeholder {
   color: #999999;
   font-size: 0.55rem;
 }
-form.contact input:-ms-input-placeholder {
+form.contact input:-ms-input-placeholder, form.contact textarea:-ms-input-placeholder {
   color: #999999;
   font-size: 0.55rem;
 }
-form.contact input::-ms-input-placeholder {
+form.contact input::-ms-input-placeholder, form.contact textarea::-ms-input-placeholder {
   color: #999999;
   font-size: 0.55rem;
 }
-form.contact input::placeholder {
+form.contact input::placeholder,
+form.contact textarea::placeholder {
   color: #999999;
   font-size: 0.55rem;
+}
+form.contact input.fullWidthInputs,
+form.contact textarea.fullWidthInputs {
+  min-width: 100%;
+}
+form.contact textarea.fullWidthInputs {
+  height: 150px;
+}
+form.contact .sendFormElements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 p {
@@ -470,23 +487,6 @@ a {
 strong {
   color: black;
   font-family: "Raleway", sans-serif;
-}
-
-.fullWidthInputs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-}
-.fullWidthInputs input {
-  width: 100%;
-}
-.fullWidthInputs .message {
-  height: 200px;
 }
 
 section.footer {

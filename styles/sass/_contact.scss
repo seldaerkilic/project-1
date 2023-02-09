@@ -39,9 +39,11 @@ form.contact {
     align-items: center;
     flex-wrap: wrap;
 
-    input {
+    input,
+    textarea {
         border: none;
         background-color: #f6f6f6;
+        // background-color: #999999;
         margin: 20px 0;
         height: 40px;
         width: calc((100% / 2) - 5px);
@@ -54,9 +56,23 @@ form.contact {
 
     }
 
-    input::placeholder {
+    input::placeholder,
+    textarea::placeholder {
         color: #999999;
         font-size: 0.55rem;
+    }
+
+    input.fullWidthInputs,
+    textarea.fullWidthInputs {
+        min-width: 100%;
+    }
+    textarea.fullWidthInputs {
+        height: 150px;
+    }
+
+    .sendFormElements {
+        display: flex;
+        align-items: center;
     }
     
 }
@@ -82,14 +98,3 @@ strong {
     font-family: 'Raleway', sans-serif;
 }
 
-.fullWidthInputs {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    input {
-        width: 100%;
-    }
-    .message {
-        height: 200px;
-    }
-}

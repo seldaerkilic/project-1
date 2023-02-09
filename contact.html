@@ -21,7 +21,7 @@
             </h1>
             <ul class="navBar">
                 <li>
-                    <a href="./index.html/#headerHome">HOME</a>
+                    <a href="./index.html">HOME</a>
                 </li>
                 <li>
                     <a href="./index.html/#about">ABOUT</a>
@@ -67,16 +67,16 @@
                 <label for="email"></label>
                 <input type="email" name="email" id="email" placeholder="Your Email">
 
-                <div class="fullWidthInputs">
-                    <label for="subject"></label>
-                    <input type="text" name="subject" id="subject" placeholder="Subject">
+                <label for="subject"></label>
+                <input type="text" class="fullWidthInputs" name="subject" id="subject" placeholder="Subject">
 
-                    <label for="message"></label>
-                    <input type="text" name="message" class="message" id="message" placeholder="Message">
+                <label for="message"></label>
+                <textarea name="message" id="message" row-max="10" class="fullWidthInputs" placeholder="Message"></textarea>
+
+                <div class="sendFormElements">
+                    <a href="mailto:yum@food.com">SEND MESSAGE</a>
+                    <img class="greenArrow" src="./styles/assets/green-arrow.png" alt="send message arrow">
                 </div>
-
-                <a href="mailto:yum@food.com">SEND MESSAGE</a>
-                <img src="./styles/assets/right-slider.png" alt="send message arrow">
             </form>
     </section>
 
