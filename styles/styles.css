@@ -489,6 +489,101 @@ strong {
   font-family: "Raleway", sans-serif;
 }
 
+body.blogPageBody {
+  background-color: white;
+}
+
+main.mainBlog {
+  background-color: white;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+main.mainBlog section.blogContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  width: 100%;
+  text-align: left;
+  padding-top: 50px;
+}
+main.mainBlog section.blogContent h2 {
+  margin-bottom: 0;
+}
+main.mainBlog section.blogContent p.blogDetails {
+  margin-top: 0;
+  font-size: 0.5rem;
+}
+main.mainBlog section.tagsAndShare {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  width: 100%;
+}
+main.mainBlog section.tagsAndShare img {
+  width: 30px;
+  height: 30px;
+}
+main.mainBlog section.tagsAndShare div.tags,
+main.mainBlog section.tagsAndShare div.share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: row;
+      -ms-flex: row;
+          flex: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.03rem;
+}
+main.mainBlog section.tagsAndShare div.tags h3,
+main.mainBlog section.tagsAndShare div.share h3 {
+  font-size: 0.7rem;
+  padding: 0 5px;
+  margin: 0;
+}
+main.mainBlog section.author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main.mainBlog section.author img {
+  width: 25%;
+  margin-right: 30px;
+}
+main.mainBlog section.author div.authorBio {
+  padding: 0 30px;
+  background-color: #f6f6f6;
+}
+
 section.footer {
   background-color: #333333;
   font-family: "Raleway", sans-serif;
