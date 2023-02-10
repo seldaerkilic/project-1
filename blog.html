@@ -12,7 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
-<body>
+<body class="blogPageBody">
     <!-- Header section -->
     <header id="headerBlog" class="headerBlog">
         <nav class="navFlex">
@@ -56,7 +56,119 @@
     </header>
 
     <!-- Main section -->
+    <main>
 
+        <!-- Blog article -->
+        <div class="blogContent">
+            <h2>PINEAPPLE CHICKEN</h2>
+            <p class="blogDetails">Posted at July 11, 2018 | by Admin | in Recipes</p>
+            <p>
+                Morbi et accumsan est, non convallis metus. Etiam faucibus, leo et scelerisque facillisis, magna erat dictum nibh, vel congue tertor massa vitae magna. Magna erat dictum nibh, vel congue tortor massa vitae magna.
+
+                Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.
+
+                Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut peanut soko zucchini.
+
+                Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chichweed potato bell pepper artichoke.
+
+                Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce letturce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jicama salsify.
+            </p>
+        </div>
+        <hr class="blogPage" style="">
+
+        <div class="tagsAndShare">
+            <h3>TAGS:</h3>
+            <P>Recipes, Chicken, Pineapple, Mexican</P>
+            <h3>SHARE:</h3>
+            <img src="./styles/assets/fb-icon.png" alt="facebook">
+            <img src="./styles/assets/tw-icon.png" alt="twitter">
+            <img src="./styles/assets/ig-icon.png" alt="instagram">
+        </div>
+        <hr class="blogPage" style="">
+
+        <!-- Author Bio -->
+        <div class="author">
+            <img src="./styles/assets/blog-2.jpeg" alt="blog author with very loong hair standing in front of pink background" class="author">
+            <div class="authorBio">
+                <h3>SALLY LUCAS</h3>
+                <p>
+                    Turnip greens yarrow ricebean rutubaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout corriander water chestnut gourd swiss chard wakame kohlrabi.
+                </p>
+            </div>
+        </div>
+        <hr class="blogPage" style="">
+
+        <!-- Related Posts -->
+        <div class="relatedPosts">
+            <h3>RELATED POSTS</h3>
+            <div class="postContainer">
+                <div class="postCard">
+                    <img src="./styles/assets/blog-3.jpeg" alt="">
+                    <h4>HOW TO BAKE THE PERFECT CAKE</h4>
+                    <p class="blogDetails">July 11, 2018 | by Admin | in Recipes</p>
+                </div>
+
+                <div class="postCard">
+                    <img src="./styles/assets/blog-4.jpeg" alt="">
+                    <h4>FLORAL CUPCAKES</h4>
+                    <p class="blogDetails">July 19, 2018 | by Admin | in Recipes</p>
+                </div>
+
+                <div class="postCard">
+                    <img src="./styles/assets/blog-5.jpeg" alt="">
+                    <h4>SINGLE POST WITH IMAGE</h4>
+                    <p class="blogDetails">July 22, 2018 | by Admin | in Recipes</p>
+                </div>
+            </div>
+        </div>
+        <hr class="blogPage" style="">
+
+        <!-- Comments -->
+        <div class="commentContent">
+            <h3>02 COMMENTS</h3>
+            <div class="commentContainer">
+                <img src="./styles/assets/blog-6.jpeg" alt="commenter">
+                <div class="comment">
+                    <h5><strong>Lucatony Avaro</strong> - Web Developer</h5>
+                    <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</p>
+                    <p class="minDetails">Jul 17,2015 at 15 hours ago</p>
+                </div>
+            </div>
+
+            <div class="commentContainer">
+                <img src="./styles/assets/blog-7.jpeg" alt="commenter">
+                <div class="comment">
+                    <h5><strong>Brian Hudson</strong> - Web Developer</h5>
+                    <p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut jicama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut.</p>
+                    <p class="minDetails">Jul 17,2015 at 15 hours ago</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Comment Form -->
+        <div class="commentFormContainer">
+            <h3>LEAVE A COMMENT</h3>
+            <p class="subheadComment">Your email address will not be published. Required fields are marked*</p>
+            <div class="commentForm">
+                <form action="">
+                    <label for="commentName"></label>
+                    <input type="text" name="commentName" placeholder="Name*">
+                    
+                    <label for="commentEmail"></label>
+                    <input type="email" name="commentEmail" placeholder="Email*">
+                    
+                    <label for="website"></label>
+                    <input type="text" name="website" placeholder="Your Website">
+                    
+                    <label for="comment"></label>
+                    <textarea class="" name="comment" id="comment" rows="10" placeholder="Comment"></textarea>
+                    
+                    <button type="sumbit">SUBMIT COMMENT</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
 
 
 
