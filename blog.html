@@ -17,20 +17,20 @@
     <header id="headerBlog" class="headerBlog">
         <nav class="navFlex">
             <h1 class="navLogo">
-                <a href="#headerHome">DELICIOUS</a>
+                <a href="./index.html">DELICIOUS</a>
             </h1>
             <ul class="navBar">
                 <li>
-                    <a href="./index.html">HOME</a>
+                    <a href="./index.html/#headerHome">HOME</a>
                 </li>
                 <li>
-                    <a href="#about">ABOUT</a>
+                    <a href="./index.html/#about">ABOUT</a>
                 </li>
                 <li>
-                    <a href="#recipeSection">RECIPES</a>
+                    <a href="./index.html/#recipeSection">RECIPES</a>
                 </li>
                 <li>
-                    <a href="#nutrition">NUTRITION</a>
+                    <a href="./index.html/#nutrition">NUTRITION</a>
                 </li>
                 <li>
                     <a href="./blog.html">BLOG</a>
@@ -73,7 +73,7 @@
             <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce letturce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jicama salsify.
             </p>
         </section>
-        <hr class="blogPage" style="0.5px;color:#999999;width:100%;margin:20px 0;">
+        <hr style="height:2px;width:100%;background-color:#f6f6f6;border:none;margin:5px 0;">
 
         <section class="tagsAndShare">
             <div class="tags">
@@ -82,12 +82,18 @@
             </div>
             <div class="share">
                 <h3>SHARE:</h3>
-                <img src="./styles/assets/fb-icon.png" alt="facebook">
-                <img src="./styles/assets/tw-icon.png" alt="twitter">
-                <img src="./styles/assets/ig-icon.png" alt="instagram">
+                <a href="https://www.facebook.com/">
+                    <img src="./styles/assets/gray-fb-icon.png" alt="facebook">
+                </a>
+                <a href="https://twitter.com/">
+                    <img src="./styles/assets/gray-tw-icon.png" alt="twitter">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="./styles/assets/gray-ig-icon.png" alt="instagram">
+                </a>
             </div>
         </section>
-        <hr class="blogPage" style="0.5px;color:#999999;width:100%;margin:20px 0;">
+        <hr style="height:2px;width:100%;background-color:#f6f6f6;border:none;margin:5px 0;">
 
         <!-- Author Bio -->
         <section class="author">
@@ -99,7 +105,7 @@
                 </p>
             </div>
         </section>
-        <hr class="blogPage" style="0.5px;color:#999999;width:100%;margin:20px 0;">
+        <hr style="height:2px;width:100%;background-color:#f6f6f6;border:none;margin:5px 0;">
 
         <!-- Related Posts -->
         <section class="relatedPosts">
@@ -124,7 +130,7 @@
                 </div>
             </div>
         </section>
-        <hr class="blogPage" style="0.5px;color:#999999;width:100%;margin:20px 0;">
+        <hr style="height:2px;width:100%;background-color:#f6f6f6;border:none;margin:5px 0;">
 
         <!-- Comments -->
         <section class="commentContent">
@@ -133,8 +139,8 @@
                 <img src="./styles/assets/blog-6.jpeg" alt="commenter">
                 <div class="comment">
                     <h5><strong>Lucatony Avaro</strong> - Web Developer</h5>
-                    <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</p>
-                    <p class="minDetails">Jul 17,2015 at 15 hours ago</p>
+                    <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.
+                    <br><strong>Jul 17,2015 at 15 hours ago</strong></p>
                 </div>
             </div>
 
@@ -142,8 +148,8 @@
                 <img src="./styles/assets/blog-7.jpeg" alt="commenter">
                 <div class="comment">
                     <h5><strong>Brian Hudson</strong> - Web Developer</h5>
-                    <p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut jicama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut.</p>
-                    <p class="minDetails">Jul 17,2015 at 15 hours ago</p>
+                    <p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut jicama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut.
+                    <br><strong>Jul 17,2015 at 15 hours ago</strong></p>
                 </div>
             </div>
         </section>
@@ -153,18 +159,19 @@
             <h3>LEAVE A COMMENT</h3>
             <p class="subheadComment">Your email address will not be published. Required fields are marked*</p>
             <div class="commentForm">
-                <form action="">
+                <form action="submit" method="get">
+                <div class="topInputs">
                     <label for="commentName"></label>
                     <input type="text" name="commentName" placeholder="Name*">
                     
                     <label for="commentEmail"></label>
-                    <input type="email" name="commentEmail" placeholder="Email*">
+                    <input class="emailInput" type="email" name="commentEmail" placeholder="Email*">
                     
                     <label for="website"></label>
                     <input type="text" name="website" placeholder="Your Website">
-                    
+                </div>
                     <label for="comment"></label>
-                    <textarea class="" name="comment" id="comment" rows="10" placeholder="Comment"></textarea>
+                    <textarea class="" name="comment" id="comment" rows="10" maxlength="500" placeholder="Comment"></textarea>
                     
                     <button type="sumbit">SUBMIT COMMENT</button>
                 </form>
@@ -172,11 +179,6 @@
         </section>
 
     </main>
-
-
-
-
-
 
     <!-- Footer section -->
     <footer>

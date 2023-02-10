@@ -542,8 +542,8 @@ main.mainBlog section.tagsAndShare {
   width: 100%;
 }
 main.mainBlog section.tagsAndShare img {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
 main.mainBlog section.tagsAndShare div.tags,
 main.mainBlog section.tagsAndShare div.share {
@@ -574,6 +574,7 @@ main.mainBlog section.author {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 10px 0;
 }
 main.mainBlog section.author img {
   width: 25%;
@@ -582,6 +583,166 @@ main.mainBlog section.author img {
 main.mainBlog section.author div.authorBio {
   padding: 0 30px;
   background-color: #f6f6f6;
+}
+main.mainBlog section.relatedPosts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+main.mainBlog .postContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+main.mainBlog .postContainer .postCard {
+  width: calc(33.3333333333% - 30px);
+}
+main.mainBlog .postContainer h4 {
+  font-family: "Raleway", sans-serif;
+  line-height: 24px;
+  font-size: 0.8rem;
+  padding: 10px 0;
+  margin: 0;
+}
+main.mainBlog .postContainer p {
+  margin-top: 0;
+}
+main.mainBlog section.commentContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+main.mainBlog section.commentContent .commentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+main.mainBlog section.commentContent .commentContainer img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+main.mainBlog section.commentContent .commentContainer p {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-top: 0;
+}
+main.mainBlog section.commentContent .commentContainer div.comment {
+  background-color: #f6f6f6;
+  color: #999999;
+  padding: 0 20px;
+  margin-top: 10px;
+}
+main.mainBlog section.commentContent .commentContainer div.comment h5 {
+  margin: 10px 0;
+  padding: 5px 0;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-size: 0.7rem;
+}
+main.mainBlog .commentFormContainer {
+  margin: 50px 0;
+  width: 100%;
+}
+main.mainBlog .commentForm {
+  width: 100%;
+}
+main.mainBlog .commentForm form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+main.mainBlog .commentForm form label {
+  margin: 5px 0;
+}
+main.mainBlog .commentForm form input {
+  height: 30px;
+  width: 28.5714285714%;
+  border: 2px solid #f6f6f6;
+}
+main.mainBlog .commentForm form textarea {
+  min-width: 100%;
+  margin: 15px 0;
+  max-height: 200px;
+  border: 2px solid #f6f6f6;
+}
+main.mainBlog .commentForm form button {
+  width: auto;
+  height: 40px;
+  font-size: 0.6rem;
+}
+main.mainBlog .commentForm form input::-webkit-input-placeholder, main.mainBlog .commentForm form textarea::-webkit-input-placeholder {
+  color: #999999;
+  font-size: 0.6rem;
+}
+main.mainBlog .commentForm form input::-moz-placeholder, main.mainBlog .commentForm form textarea::-moz-placeholder {
+  color: #999999;
+  font-size: 0.6rem;
+}
+main.mainBlog .commentForm form input:-ms-input-placeholder, main.mainBlog .commentForm form textarea:-ms-input-placeholder {
+  color: #999999;
+  font-size: 0.6rem;
+}
+main.mainBlog .commentForm form input::-ms-input-placeholder, main.mainBlog .commentForm form textarea::-ms-input-placeholder {
+  color: #999999;
+  font-size: 0.6rem;
+}
+main.mainBlog .commentForm form input::placeholder,
+main.mainBlog .commentForm form textarea::placeholder {
+  color: #999999;
+  font-size: 0.6rem;
+}
+main.mainBlog .commentForm form .topInputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 section.footer {
