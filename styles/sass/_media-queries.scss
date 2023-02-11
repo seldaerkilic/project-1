@@ -119,7 +119,7 @@
 
         aside.details {
             width: 100%;
-            height: 100vh;
+            height: 50vh;
             margin: 10px 0;
         }
 
@@ -129,14 +129,16 @@
             justify-content: space-between;
             align-items: flex-start;
             margin: 0 auto;
-            min-height: 60vh;
+            min-height: 50vh;
             div {
                 width: 27%;
                 p {
                     width: 100%;
                 }
             }
-            
+            div.info {
+                display: none;
+            }
         }
 
     }
