@@ -15,27 +15,43 @@
                 padding: 0;
                 display: inline-block;
             }
-        }
 
-    // Recipe section hide some flexCards
-        .nutrition .card5,
-        .nutrition .card6 {
-            display: hidden;
-        }
+            // Recipe section hide some flexCards
+            .cardNutri.card5,
+            .cardNutri.card6 {
+                display: none;
+            }
+        };
+
+
 }
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
     // Home page recipe section column
-    section.recipeSection {
+    .mainHome .recipeSection {
             flex-direction: column;
             flex-wrap: nowrap;
             justify-content: center;
             align-items: center;
+            height: auto;
     
             .gridItem {
-                max-width: 60%;
-                max-height: 60%;
+                width: 70%;
+                height: auto;
+            }
+            .flexBack {
+                display: none;
+            }
+        }
+        .mainHome .about {
+            height: 50vh;
+
+            .imgAbout .foodIcon {
+                width: 80px;
+                height: 80px;
+                top: -45px;
+                right: 95px;
             }
         }
 
@@ -46,15 +62,22 @@
             align-items: flex-start;
             padding: 30px;
         }
-    
         .navBar {
             padding: 0;
         }
+        .headerHome {
+            height: 50vh;
+        }
     
     // Home page imgContainer 
-        .imgContainer ul .imgGal5,
-        .imgContainer ul .imgGal6 {
-            display: hidden;
+        section.gallery .imgContainer{
+            ul .imgGal5,
+            ul .imgGal6 {
+                display: none;
+            }
+            li {
+                width: 50%;
+            }
         }
 
     // Blog page author section
@@ -69,19 +92,58 @@
     }
 
     // Blog page Related posts section
+    section.relatedPosts{
         .postContainer {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-    
+            .postCard {
+                min-width: 40%;
+            }
+        }
+        .postContainer .postCardHidden {
+            display: none;
+
             .postCard h4 {
                 font-size: 0.4rem;
             }
         }
+    }
+
+    // Contact Page
+    .mainContact {
+        flex-direction: column;
+
+        section.form {
+            background-color: white;
+            height: 60vh;
+            width: 100%;
+        }
+
+        aside.details {
+            width: 100%;
+            height: 100vh;
+            margin: 10px 0;
+        }
+
+        .details .contactDetails {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 0 auto;
+            min-height: 60vh;
+            div {
+                width: 27%;
+                p {
+                    width: 100%;
+                }
+            }
+            
+        }
+
+    }
 
     // Footer section
     section.footer .footerFlex {
-        flex-direction: column;
+        flex-wrap: wrap;
 
         h4 {
             padding: 20px 0;
@@ -105,28 +167,19 @@
             align-items: flex-start;
         }
 
-    // Contact page Main section
-        .mainContact {
-            flex-direction: column;
-    
-            section.form {
-                background-color: white;
-                height: 60vh;
-                width: 100%;
-            }
-    
-            aside.details {
-                width: 100%;
-                height: 100vh;
-                margin: 10px 0;
-            }
-    
-            div.info {
-                display: hidden;
-            }
-        }
+    // Contact page
+    aside.details .contactDetails {
+        justify-content: space-around;
 
-    
+        div.details,
+        div.hours {
+            width: 45%;
+        }
+        div.info {
+            display: none;
+        }
+    }
+
 }
 
 /* Landscape phones and down */
@@ -143,166 +196,3 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Header media queries
-// @media (max-width: 850px) {
-//     .navFlex {
-//         flex-direction: column;
-//         justify-content: flex-start;
-//         align-items: flex-start;
-//         padding: 30px;
-//     }
-//     .navBar {
-//         padding: 0;
-//     }
-// }
-
-// @media (max-width: 600px) {
-//     .navBar {
-//         flex-wrap: wrap;
-//     }
-// }
-
-// Home page media queries
-
-
-
-// recipe section grid 
-// @media (max-width: 1240px) {
-//     section.recipeSection {
-//         height: 150vh;
-//         .gridItem {
-//             padding: 30px;
-//             height: 50%;
-//         }
-//         .flexBack {
-//             padding: 0;
-//             display: inline-block;
-//         }
-//     }
-// }
-
-// Recipe section direction column --- NOT WORKING
-// @media (max-width: 1050px) {
-//     section.recipeSection {
-//         flex-direction: column;
-//         flex-wrap: nowrap;
-//         justify-content: center;
-//         align-items: center;
-
-//         .gridItem {
-//             max-width: 60%;
-//             max-height: 60%;
-//         }
-//     }
-// }
-
-// Nutrition part hide some card  --- NOT WORKING
-// @media (max-width: 1200px) {
-//     .card5,
-//     .card6 {
-//         display: hidden;
-//     }
-// }
-
-
-// imgContainer hide some img  --- NOT WORKING
-// @media (max-width: 850px) {
-//     .imgGal5,
-//     .imgGal6 {
-//         display: hidden;
-//     }
-// }
-
-// imgContainer direction column  --- NOT WORKING
-// @media (max-width: 550px) {
-//     .imgContainer ul {
-//         display: flex;
-//         flex-direction: column;
-//     }
-// }
-
-// Blog page media queries
-// @media (max-width: 900px) {
-//     section.author {
-//         flex-direction: column;
-//         justify-content: center;
-//         align-items: center;
-//         img {
-//             margin: 20px;
-//         }
-//     }
-// }
-
-// Related posts ---- NOT WORKING
-
-// @media (max-width: 900px) {
-//     .postContainer {
-//         flex-direction: column;
-//         justify-content: center;
-//         align-items: center;
-
-//         .postCard h4 {
-//             font-size: 0.4rem;
-//         }
-//     }
-// }
-
-// Comment form  --- NOT WORKING
-// @media (max-width: 850px) {
-//     div.topInputs {
-//         flex-direction: column;
-//         align-items: flex-start;
-//     }
-// }
-
-
-// Contact Page media queries   ---NOT WORKING
-// @media (max-width: 800px) {
-//     .mainContact {
-//         flex-direction: column;
-
-//         section.form {
-//             background-color: white;
-//             height: 60vh;
-//             width: 100%;
-//         }
-//         aside.details {
-//             width: 100%;
-//             height: 100vh;
-//             margin: 10px 0;
-//         }
-//         div.info {
-//             display: hidden;
-//         }
-//     }
-// }
-
-// Footer section
-// @media (max-width: 1200px) {
-//     section.footer .footerFlex {
-//         flex-direction: column;
-
-//         h4 {
-//             padding: 20px 0;
-//         }
-//         .footerLogo {
-//             padding: 20px 0;
-//         }
-//         .footerBlock legend {
-//             padding-top: 0;
-//         }
-//     }
-// }

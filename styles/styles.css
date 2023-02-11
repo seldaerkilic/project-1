@@ -797,14 +797,14 @@ section.copyright {
     padding: 0;
     display: inline-block;
   }
-  .nutrition .card5,
-  .nutrition .card6 {
-    display: hidden;
+  section.recipeSection .cardNutri.card5,
+  section.recipeSection .cardNutri.card6 {
+    display: none;
   }
 }
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
-  section.recipeSection {
+  .mainHome .recipeSection {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -817,10 +817,23 @@ section.copyright {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    height: auto;
   }
-  section.recipeSection .gridItem {
-    max-width: 60%;
-    max-height: 60%;
+  .mainHome .recipeSection .gridItem {
+    width: 70%;
+    height: auto;
+  }
+  .mainHome .recipeSection .flexBack {
+    display: none;
+  }
+  .mainHome .about {
+    height: 50vh;
+  }
+  .mainHome .about .imgAbout .foodIcon {
+    width: 80px;
+    height: 80px;
+    top: -45px;
+    right: 95px;
   }
   .navFlex {
     -webkit-box-orient: vertical;
@@ -838,9 +851,15 @@ section.copyright {
   .navBar {
     padding: 0;
   }
-  .imgContainer ul .imgGal5,
-  .imgContainer ul .imgGal6 {
-    display: hidden;
+  .headerHome {
+    height: 50vh;
+  }
+  section.gallery .imgContainer ul .imgGal5,
+  section.gallery .imgContainer ul .imgGal6 {
+    display: none;
+  }
+  section.gallery .imgContainer li {
+    width: 50%;
   }
   section.author {
     -webkit-box-orient: vertical;
@@ -857,26 +876,57 @@ section.copyright {
   section.author img {
     margin: 20px;
   }
-  .postContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  section.relatedPosts .postContainer .postCard {
+    min-width: 40%;
   }
-  .postContainer .postCard h4 {
+  section.relatedPosts .postContainer .postCardHidden {
+    display: none;
+  }
+  section.relatedPosts .postContainer .postCardHidden .postCard h4 {
     font-size: 0.4rem;
   }
-  section.footer .footerFlex {
+  .mainContact {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .mainContact section.form {
+    background-color: white;
+    height: 60vh;
+    width: 100%;
+  }
+  .mainContact aside.details {
+    width: 100%;
+    height: 100vh;
+    margin: 10px 0;
+  }
+  .mainContact .details .contactDetails {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 0 auto;
+    min-height: 60vh;
+  }
+  .mainContact .details .contactDetails div {
+    width: 27%;
+  }
+  .mainContact .details .contactDetails div p {
+    width: 100%;
+  }
+  section.footer .footerFlex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   section.footer .footerFlex h4 {
     padding: 20px 0;
@@ -899,24 +949,16 @@ section.copyright {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  .mainContact {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  aside.details .contactDetails {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
-  .mainContact section.form {
-    background-color: white;
-    height: 60vh;
-    width: 100%;
+  aside.details .contactDetails div.details,
+  aside.details .contactDetails div.hours {
+    width: 45%;
   }
-  .mainContact aside.details {
-    width: 100%;
-    height: 100vh;
-    margin: 10px 0;
-  }
-  .mainContact div.info {
-    display: hidden;
+  aside.details .contactDetails div.info {
+    display: none;
   }
 }
 /* Landscape phones and down */
