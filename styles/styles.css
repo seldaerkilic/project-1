@@ -345,6 +345,7 @@ h1 {
 .checkout img,
 .searchBar img {
   height: 30px;
+  width: 30px;
 }
 
 .headerBlog {
@@ -361,7 +362,7 @@ h1 {
   background-size: cover;
 }
 
-main {
+main.mainContact {
   background-color: #f6f6f6;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -577,7 +578,8 @@ main.mainBlog section.author {
   padding: 10px 0;
 }
 main.mainBlog section.author img {
-  width: 25%;
+  width: 150px;
+  height: 200px;
   margin-right: 30px;
 }
 main.mainBlog section.author div.authorBio {
@@ -844,16 +846,188 @@ section.copyright {
   color: #999999;
 }
 
-.flexContainer {
+@media (max-width: 850px) {
+  .navFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 30px;
+  }
+  .navBar {
+    padding: 0;
+  }
+}
+@media (max-width: 600px) {
+  .navBar {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media (max-width: 1240px) {
+  section.recipeSection {
+    height: 150vh;
+  }
+  section.recipeSection .gridItem {
+    padding: 30px;
+    height: 50%;
+  }
+  section.recipeSection .flexBack {
+    padding: 0;
+    display: inline-block;
+  }
+}
+@media (max-width: 1050px) {
+  section.recipeSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.recipeSection .gridItem {
+    max-width: 60%;
+    max-height: 60%;
+  }
+}
+@media (max-width: 1200px) {
+  .card5,
+  .card6 {
+    display: hidden;
+  }
+}
+@media (max-width: 850px) {
+  .imgGal5,
+  .imgGal6 {
+    display: hidden;
+  }
+}
+@media (max-width: 550px) {
+  .imgContainer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 900px) {
+  section.author {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.author img {
+    margin: 20px;
+  }
+}
+@media (max-width: 900px) {
+  .postContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .postContainer .postCard h4 {
+    font-size: 0.4rem;
+  }
+}
+@media (max-width: 850px) {
+  div.topInputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+@media (max-width: 800px) {
+  .mainContact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainContact section.form {
+    background-color: white;
+    height: 60vh;
+    width: 100%;
+  }
+  .mainContact aside.details {
+    width: 100%;
+    height: 100vh;
+    margin: 10px 0;
+  }
+  .mainContact div.info {
+    display: hidden;
+  }
+}
+@media (max-width: 1200px) {
+  section.footer .footerFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.footer .footerFlex h4 {
+    padding: 20px 0;
+  }
+  section.footer .footerFlex .footerLogo {
+    padding: 20px 0;
+  }
+  section.footer .footerFlex .footerBlock legend {
+    padding-top: 0;
+  }
+}
+section.recipeSection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
+  height: 110vh;
 }
-
-.flexContainer .gridItem {
+section.recipeSection .gridItem {
   width: 50%;
+  height: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -864,9 +1038,58 @@ section.copyright {
       -ms-flex-align: center;
           align-items: center;
 }
+section.recipeSection .flexBack img {
+  max-height: 100%;
+}
+section.recipeSection .nutrition {
+  padding: 20px;
+  max-height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #ededed;
+}
+section.recipeSection .nutrition h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
+  margin: 0;
+  text-align: left;
+  position: left;
+}
+section.recipeSection .nutrition img {
+  width: 50px;
+  height: 50px;
+}
+section.recipeSection .nutrition p {
+  font-size: 0.6rem;
+  margin: 0;
+}
+section.recipeSection .cardNutri {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+}
+section.recipeSection .imgNutri {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+section.recipeSection .contentNutri {
+  padding-left: 5px;
+  padding-right: 5px;
+}
 
 .recipes {
   padding: 50px;
+  max-height: 50%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -888,57 +1111,8 @@ h2 {
   color: #999999;
 }
 
-.flexContainer .nutrition {
-  padding: 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background-color: #ededed;
-}
-
-.nutrition h3 {
-  font-family: "Raleway", sans-serif;
-  font-size: 0.8rem;
-  margin: 0;
-  text-align: left;
-  position: left;
-}
-
-.nutrition img {
-  width: 50px;
-  height: 50px;
-}
-
-.nutrition p {
-  font-size: 0.6rem;
-}
-
-.cardNutri {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 40%;
-}
-
-.imgNutri {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.contentNutri {
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-div.aboutUs {
+section.about {
+  height: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -952,34 +1126,43 @@ div.aboutUs {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 80px;
+}
+section.about p {
+  padding: 15px 50px;
+  text-align: center;
 }
 
 div.imgAbout {
-  position: relative;
-  height: 80%;
   width: 60%;
-  padding: 50px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+div.imgAbout .restaurant {
+  display: block;
+  width: 50%;
+  margin: 0;
 }
 
 img.foodIcon {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   position: absolute;
-  -webkit-transform: translate(-10%, -20%);
-          transform: translate(-10%, -20%);
-  top: 0;
-  right: 0;
-}
-
-.aboutUs p {
-  margin: 0 auto;
-  text-align: center;
-  font-family: "Lora", serif;
-  font-size: 0.75rem;
-  width: 70%;
-  padding: 20px;
-  color: #999999;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  top: -65px;
+  right: 130px;
 }
 
 div.imgContainer ul {
@@ -1010,7 +1193,17 @@ section.quotations {
   height: 100%;
 }
 section.quotations .contentQuote {
-  max-width: 70%;
+  max-width: 60%;
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 section.quotations .contentQuote p {
   padding: 30px;
@@ -1019,8 +1212,7 @@ section.quotations .contentQuote p {
   text-align: center;
   height: 100%;
   width: 65%;
-  margin: 0 auto;
-  position: relative;
+  margin: 0;
 }
 section.quotations h2 {
   margin: 0 auto;
@@ -1028,8 +1220,8 @@ section.quotations h2 {
   padding: 50px 50px 20px 50px;
 }
 section.quotations .clients img {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
 }
 section.quotations .clients {
   display: -webkit-box;
@@ -1047,20 +1239,21 @@ section.quotations .clients {
           align-items: center;
 }
 section.quotations .qMarkOpen {
-  position: absolute;
-  -webkit-transform: translate(80%, -20%);
-          transform: translate(80%, -20%);
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  top: 0;
+  left: 0;
 }
 section.quotations .qMarkClose {
-  position: absolute;
-  -webkit-transform: translate(-300%, -70%);
-          transform: translate(-300%, -70%);
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  bottom: 0;
   right: 0;
 }
 section.quotations .slider {
-  height: 100%;
+  height: 70%;
   width: 50%;
-  padding: 3%;
+  padding: 30px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1072,11 +1265,8 @@ section.quotations .slider {
       -ms-flex-align: center;
           align-items: center;
 }
-section.quotations .slider .arrowLeft {
-  width: 100px;
-  height: 100px;
-}
+section.quotations .slider .arrowLeft,
 section.quotations .slider .arrowRight {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
 }
