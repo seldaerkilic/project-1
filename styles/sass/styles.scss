@@ -1,19 +1,76 @@
-@use "variables";
+
 @use "setup";
 @use "header";
 @use "contact";
 @use "blog";
 @use "footer";
 @use "media-queries";
+@use "variables" as *;
 
+// Global styles
 
-// Google fonts
-// font-family: 'Lora', serif;
-// font-family: 'Raleway', sans-serif;
+html {
+    font-size: 125%;
+}
 
-// Colors:
-// dark green: #64a604
-// light green: #dded9a
+body {
+    background-color: $whiteShade;
+    line-height: $lineHeightSmall;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+ul {
+    list-style: none;
+    padding: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: $darkGreen;
+}
+
+a:focus {
+    color: $darkGreen;
+}
+
+p {
+    font-size: 18px;
+}
+
+button {
+    font-family: $fontRale;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    width: 30%;
+    height: 9%;
+    background-color: $darkGreen;
+    color: $whiteShade;
+    border: none;
+    line-height: $line-heightMid;
+}
+
+span {
+    color: $darkGreen;
+}
+
+h1 a {
+    font-size: 2rem;
+}
+
 
 
 // Home Page flexContainer
@@ -40,10 +97,10 @@ section.recipeSection {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        background-color: #ededed;
+        background-color: $whiteShade;
 
         h3 {
-            font-family: 'Raleway', sans-serif;
+            font-family: $fontRale;
             font-size: 0.8rem;
             margin: 0;
             text-align: left;
@@ -82,17 +139,17 @@ section.recipeSection {
     flex-direction: column;
 }
 h2 {
-    font-family: 'Raleway', sans-serif;
-    line-height: 24px;
+    font-family: $fontRale;
+    line-height: $lineHeightSmall;
     font-size: 1.2rem;
 }
 .recipes p {
-    font-family: 'Lora', serif;
+    font-family: $fontLora;
     text-align: center;
     padding: 20px;
     width: 80%;
     font-size: 0.75rem;
-    color: #999999;
+    color: $gray;
 }
 
 
@@ -154,7 +211,7 @@ div.imgContainer ul {
 
 // Clients quotation section
 section.quotations {
-    background-color: #dded9a;
+    background-color: $lightGreen;
     margin: 0 auto;
     height: 100%;
     .contentQuote {
@@ -166,7 +223,7 @@ section.quotations {
     }
     .contentQuote p {
         padding: 30px;
-        font-family: 'Lora', serif;
+        font-family: $fontLora;
         font-style: italic;
         text-align: center;
         height: 100%;

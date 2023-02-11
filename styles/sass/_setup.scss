@@ -6,57 +6,6 @@ html { box-sizing: border-box;}
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
-// Global styles
 
-html {
-    font-size: 125%;
-}
-body {
-    background-color: #F6F6F6;
-    line-height: 24px;
-}
-.wrapper {
-    max-width: 1200px;
-    width: 80%;
-    margin: 0 auto;
-}
-img {
-    width: 100%;
-    display: block;
-}
-ul {
-    list-style: none;
-    padding: none;
-}
-a {
-    text-decoration: none;
-    color: inherit;
-}
-a:hover {
-    color: #64a604;
-}
-a:focus {
-    color: #64a604;
-}
 
-p {
-    font-size: 18px;
-}
-button {
-    font-family: 'Raleway', sans-serif;
-    font-size: 0.8rem;
-    letter-spacing: 0.5px;
-    width: 30%;
-    height: 9%;
-    background-color: #64a604;
-    color: #F6F6F6;
-    border: none;
-    line-height: 36px;
-}
-span {
-    color: #64a604;
-}
 
-h1 a {
-    font-size: 2rem;
-}

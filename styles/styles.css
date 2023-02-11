@@ -226,68 +226,6 @@ html {
   overflow: hidden;
 }
 
-html {
-  font-size: 125%;
-}
-
-body {
-  background-color: #F6F6F6;
-  line-height: 24px;
-}
-
-.wrapper {
-  max-width: 1200px;
-  width: 80%;
-  margin: 0 auto;
-}
-
-img {
-  width: 100%;
-  display: block;
-}
-
-ul {
-  list-style: none;
-  padding: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-a:hover {
-  color: #64a604;
-}
-
-a:focus {
-  color: #64a604;
-}
-
-p {
-  font-size: 18px;
-}
-
-button {
-  font-family: "Raleway", sans-serif;
-  font-size: 0.8rem;
-  letter-spacing: 0.5px;
-  width: 30%;
-  height: 9%;
-  background-color: #64a604;
-  color: #F6F6F6;
-  border: none;
-  line-height: 36px;
-}
-
-span {
-  color: #64a604;
-}
-
-h1 a {
-  font-size: 2rem;
-}
-
 .headerHome {
   height: 100vh;
   background-image: url("./assets/home-1.jpeg");
@@ -363,7 +301,7 @@ h1 {
 }
 
 main.mainContact {
-  background-color: #f6f6f6;
+  background-color: #F6F6F6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -422,7 +360,7 @@ form.contact h2 {
 form.contact input,
 form.contact textarea {
   border: none;
-  background-color: #f6f6f6;
+  background-color: #F6F6F6;
   margin: 20px 0;
   height: 40px;
   width: calc(50% - 5px);
@@ -433,24 +371,24 @@ form.contact label {
   font-size: 0.5rem;
 }
 form.contact input::-webkit-input-placeholder, form.contact textarea::-webkit-input-placeholder {
-  color: #999999;
+  color: #999;
   font-size: 0.55rem;
 }
 form.contact input::-moz-placeholder, form.contact textarea::-moz-placeholder {
-  color: #999999;
+  color: #999;
   font-size: 0.55rem;
 }
 form.contact input:-ms-input-placeholder, form.contact textarea:-ms-input-placeholder {
-  color: #999999;
+  color: #999;
   font-size: 0.55rem;
 }
 form.contact input::-ms-input-placeholder, form.contact textarea::-ms-input-placeholder {
-  color: #999999;
+  color: #999;
   font-size: 0.55rem;
 }
 form.contact input::placeholder,
 form.contact textarea::placeholder {
-  color: #999999;
+  color: #999;
   font-size: 0.55rem;
 }
 form.contact input.fullWidthInputs,
@@ -471,7 +409,7 @@ form.contact .sendFormElements {
 
 p {
   font-size: 0.65rem;
-  color: #999999;
+  color: #999;
 }
 
 h3 {
@@ -584,7 +522,7 @@ main.mainBlog section.author img {
 }
 main.mainBlog section.author div.authorBio {
   padding: 0 30px;
-  background-color: #f6f6f6;
+  background-color: #F6F6F6;
 }
 main.mainBlog section.relatedPosts {
   display: -webkit-box;
@@ -660,8 +598,8 @@ main.mainBlog section.commentContent .commentContainer p {
   margin-top: 0;
 }
 main.mainBlog section.commentContent .commentContainer div.comment {
-  background-color: #f6f6f6;
-  color: #999999;
+  background-color: #F6F6F6;
+  color: #999;
   padding: 0 20px;
   margin-top: 10px;
 }
@@ -714,24 +652,24 @@ main.mainBlog .commentForm form button {
   font-size: 0.6rem;
 }
 main.mainBlog .commentForm form input::-webkit-input-placeholder, main.mainBlog .commentForm form textarea::-webkit-input-placeholder {
-  color: #999999;
+  color: #999;
   font-size: 0.6rem;
 }
 main.mainBlog .commentForm form input::-moz-placeholder, main.mainBlog .commentForm form textarea::-moz-placeholder {
-  color: #999999;
+  color: #999;
   font-size: 0.6rem;
 }
 main.mainBlog .commentForm form input:-ms-input-placeholder, main.mainBlog .commentForm form textarea:-ms-input-placeholder {
-  color: #999999;
+  color: #999;
   font-size: 0.6rem;
 }
 main.mainBlog .commentForm form input::-ms-input-placeholder, main.mainBlog .commentForm form textarea::-ms-input-placeholder {
-  color: #999999;
+  color: #999;
   font-size: 0.6rem;
 }
 main.mainBlog .commentForm form input::placeholder,
 main.mainBlog .commentForm form textarea::placeholder {
-  color: #999999;
+  color: #999;
   font-size: 0.6rem;
 }
 main.mainBlog .commentForm form .topInputs {
@@ -748,7 +686,7 @@ main.mainBlog .commentForm form .topInputs {
 }
 
 section.footer {
-  background-color: #333333;
+  background-color: #333;
   font-family: "Raleway", sans-serif;
   padding-top: 50px;
 }
@@ -777,7 +715,7 @@ section.footer .footerFlex .footerBlock .socials {
           justify-content: flex-start;
 }
 section.footer .footerFlex h4 {
-  color: #f6f6f6;
+  color: #F6F6F6;
   line-height: 24px;
   font-size: 0.8rem;
   padding: 50px 0px;
@@ -785,7 +723,7 @@ section.footer .footerFlex h4 {
 }
 section.footer .footerFlex p, section.footer .footerFlex legend, section.footer .footerFlex label {
   font-family: "Lora", serif;
-  color: #999999;
+  color: #999;
   line-height: 24px;
   letter-spacing: 0.3px;
   font-size: 0.65rem;
@@ -804,13 +742,13 @@ section.footer .footerFlex form legend {
 section.footer .footerFlex form input {
   position: relative;
   height: 50px;
-  background-color: #999999;
+  background-color: #999;
   border: none;
 }
 section.footer .footerFlex form label {
   font-style: italic;
   position: absolute;
-  color: #f6f6f6;
+  color: #F6F6F6;
   z-index: 1;
   padding: 10px;
 }
@@ -832,7 +770,7 @@ section.footer .footerFlex form button img {
 }
 
 section.copyright {
-  background-color: #2E2E2E;
+  background-color: #2e2e2e;
   margin: 0;
   padding: 20px 0;
 }
@@ -843,33 +781,10 @@ section.copyright {
   letter-spacing: 0.3px;
   font-size: 0.65rem;
   margin: 0;
-  color: #999999;
+  color: #999;
 }
 
-@media (max-width: 850px) {
-  .navFlex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    padding: 30px;
-  }
-  .navBar {
-    padding: 0;
-  }
-}
-@media (max-width: 600px) {
-  .navBar {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
+/* Final touch for wide desktops */
 @media (max-width: 1240px) {
   section.recipeSection {
     height: 150vh;
@@ -882,12 +797,14 @@ section.copyright {
     padding: 0;
     display: inline-block;
   }
+  .nutrition .card5,
+  .nutrition .card6 {
+    display: hidden;
+  }
 }
-@media (max-width: 1050px) {
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
   section.recipeSection {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -905,31 +822,26 @@ section.copyright {
     max-width: 60%;
     max-height: 60%;
   }
-}
-@media (max-width: 1200px) {
-  .card5,
-  .card6 {
-    display: hidden;
-  }
-}
-@media (max-width: 850px) {
-  .imgGal5,
-  .imgGal6 {
-    display: hidden;
-  }
-}
-@media (max-width: 550px) {
-  .imgContainer ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .navFlex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 30px;
   }
-}
-@media (max-width: 900px) {
+  .navBar {
+    padding: 0;
+  }
+  .imgContainer ul .imgGal5,
+  .imgContainer ul .imgGal6 {
+    display: hidden;
+  }
   section.author {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -945,8 +857,6 @@ section.copyright {
   section.author img {
     margin: 20px;
   }
-}
-@media (max-width: 900px) {
   .postContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -962,8 +872,24 @@ section.copyright {
   .postContainer .postCard h4 {
     font-size: 0.4rem;
   }
+  section.footer .footerFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.footer .footerFlex h4 {
+    padding: 20px 0;
+  }
+  section.footer .footerFlex .footerLogo {
+    padding: 20px 0;
+  }
+  section.footer .footerFlex .footerBlock legend {
+    padding-top: 0;
+  }
 }
-@media (max-width: 850px) {
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
   div.topInputs {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -973,8 +899,6 @@ section.copyright {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-}
-@media (max-width: 800px) {
   .mainContact {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -995,23 +919,84 @@ section.copyright {
     display: hidden;
   }
 }
-@media (max-width: 1200px) {
-  section.footer .footerFlex {
+/* Landscape phones and down */
+@media (max-width: 600px) {
+  .navBar {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .imgContainer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  section.footer .footerFlex h4 {
-    padding: 20px 0;
-  }
-  section.footer .footerFlex .footerLogo {
-    padding: 20px 0;
-  }
-  section.footer .footerFlex .footerBlock legend {
-    padding-top: 0;
-  }
 }
+html {
+  font-size: 125%;
+}
+
+body {
+  background-color: #F6F6F6;
+  line-height: 24px;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #64a604;
+}
+
+a:focus {
+  color: #64a604;
+}
+
+p {
+  font-size: 18px;
+}
+
+button {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  width: 30%;
+  height: 9%;
+  background-color: #64a604;
+  color: #F6F6F6;
+  border: none;
+  line-height: 36px;
+}
+
+span {
+  color: #64a604;
+}
+
+h1 a {
+  font-size: 2rem;
+}
+
 section.recipeSection {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1051,7 +1036,7 @@ section.recipeSection .nutrition {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: #ededed;
+  background-color: #F6F6F6;
 }
 section.recipeSection .nutrition h3 {
   font-family: "Raleway", sans-serif;
@@ -1108,7 +1093,7 @@ h2 {
   padding: 20px;
   width: 80%;
   font-size: 0.75rem;
-  color: #999999;
+  color: #999;
 }
 
 section.about {

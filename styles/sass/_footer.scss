@@ -1,8 +1,9 @@
 @use "setup";
+@use "variables" as *;
 
 section.footer {
-    background-color: #333333;
-    font-family: 'Raleway', sans-serif;
+    background-color: $blackTwo;
+    font-family: $fontRale;
     padding-top: 50px;
 
     .footerFlex {
@@ -18,16 +19,16 @@ section.footer {
             
         }
         h4 {
-            color: #f6f6f6;
-            line-height: 24px;
+            color: $whiteShade;
+            line-height: $lineHeightSmall;
             font-size: 0.8rem;
             padding: 50px 0px;
             margin: 0;
         }
         p, legend, label {
-            font-family: 'Lora', serif;
-            color: #999999;
-            line-height: 24px;
+            font-family: $fontLora;
+            color: $gray;
+            line-height: $lineHeightSmall;
             letter-spacing: 0.3px;
             font-size: 0.65rem;
             max-width: 250px;
@@ -38,7 +39,7 @@ section.footer {
             font-size: 2.2rem;
             padding: 50px 0px;
             margin: 0;
-            color: #64a604;
+            color: $darkGreen;
         }
         form {
             legend {
@@ -47,13 +48,13 @@ section.footer {
             input {
             position: relative;
             height: 50px;
-            background-color: #999999;
+            background-color: $gray;
             border: none;
             }
             label {
             font-style: italic;
             position: absolute;
-            color: #f6f6f6;
+            color: $whiteShade;
             z-index: 1;
             padding: 10px;
             // transform: translate(100%);
@@ -76,17 +77,17 @@ section.footer {
     width: 30px;
 }
 section.copyright  {
-    background-color: #2E2E2E;
+    background-color: $black;
     margin: 0;
     padding: 20px 0;
 }
 .copyright {
     p {
-        font-family: 'Raleway', sans-serif;
-        line-height: 24px;
+        font-family: $fontRale;
+        line-height: $lineHeightSmall;
         letter-spacing: 0.3px;
         font-size: 0.65rem;
         margin: 0;
-        color: #999999;
+        color: $gray;
     }
 }

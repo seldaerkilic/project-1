@@ -1,7 +1,8 @@
 @use "setup";
+@use "variables" as *;
 
 main.mainContact {
-    background-color: #f6f6f6;
+    background-color: $whiteShade;
     display: flex;
     height: 70vh;
     justify-content: center;
@@ -42,8 +43,7 @@ form.contact {
     input,
     textarea {
         border: none;
-        background-color: #f6f6f6;
-        // background-color: #999999;
+        background-color: $whiteShade;
         margin: 20px 0;
         height: 40px;
         width: calc((100% / 2) - 5px);
@@ -51,14 +51,14 @@ form.contact {
 
     label {
         z-index: 1;
-        font-family: 'Raleway', sans-serif;
+        font-family: $fontRale;
         font-size: 0.5rem;
 
     }
 
     input::placeholder,
     textarea::placeholder {
-        color: #999999;
+        color: $gray;
         font-size: 0.55rem;
     }
 
@@ -79,22 +79,22 @@ form.contact {
 
 p {
     font-size: 0.65rem;
-    color: #999999;
+    color: $gray;
 }
 
 h3 {
-    font-family: 'Raleway', sans-serif;
+    font-family: $fontRale;
     font-size: 0.8rem;
 }
 
 a {
-    font-family: 'Raleway', sans-serif;
+    font-family: $fontRale;
     font-size: 0.6rem;
     text-decoration: none;
 }
 
 strong {
     color: black;
-    font-family: 'Raleway', sans-serif;
+    font-family: $fontRale;
 }
 
