@@ -1039,6 +1039,12 @@ section.copyright {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .mainContact aside.details div.contactDetails p {
+    font-size: 0.7rem;
+  }
+  .mainContact aside.details div.contactDetails h2 {
+    font-size: 1rem;
+  }
 }
 html {
   font-size: 125%;

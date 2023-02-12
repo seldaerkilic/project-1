@@ -253,11 +253,26 @@
         }
     }
     
-
     // Home page imgContainer
     .imgContainer ul {
         display: flex;
         flex-direction: column;
     }
+
+    // Contact page aside
+    .mainContact aside.details {
+        div.contactDetails {
+            p {
+                font-size: 0.7rem;
+            }
+            h2 {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    // Blog page comment form 
+
+
 }
 
