@@ -654,23 +654,28 @@ main.mainBlog .commentForm form button {
 main.mainBlog .commentForm form input::-webkit-input-placeholder, main.mainBlog .commentForm form textarea::-webkit-input-placeholder {
   color: #999;
   font-size: 0.6rem;
+  z-index: 3;
 }
 main.mainBlog .commentForm form input::-moz-placeholder, main.mainBlog .commentForm form textarea::-moz-placeholder {
   color: #999;
   font-size: 0.6rem;
+  z-index: 3;
 }
 main.mainBlog .commentForm form input:-ms-input-placeholder, main.mainBlog .commentForm form textarea:-ms-input-placeholder {
   color: #999;
   font-size: 0.6rem;
+  z-index: 3;
 }
 main.mainBlog .commentForm form input::-ms-input-placeholder, main.mainBlog .commentForm form textarea::-ms-input-placeholder {
   color: #999;
   font-size: 0.6rem;
+  z-index: 3;
 }
 main.mainBlog .commentForm form input::placeholder,
 main.mainBlog .commentForm form textarea::placeholder {
   color: #999;
   font-size: 0.6rem;
+  z-index: 3;
 }
 main.mainBlog .commentForm form .topInputs {
   display: -webkit-box;
@@ -782,6 +787,31 @@ section.copyright {
   font-size: 0.65rem;
   margin: 0;
   color: #999;
+}
+
+.footerFlex .footerBlock input::-webkit-input-placeholder {
+  color: #999;
+  font-size: 0.6rem;
+}
+
+.footerFlex .footerBlock input::-moz-placeholder {
+  color: #999;
+  font-size: 0.6rem;
+}
+
+.footerFlex .footerBlock input:-ms-input-placeholder {
+  color: #999;
+  font-size: 0.6rem;
+}
+
+.footerFlex .footerBlock input::-ms-input-placeholder {
+  color: #999;
+  font-size: 0.6rem;
+}
+
+.footerFlex .footerBlock input::placeholder {
+  color: #999;
+  font-size: 0.6rem;
 }
 
 /* Final touch for wide desktops */

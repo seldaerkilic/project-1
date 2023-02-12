@@ -91,3 +91,10 @@ section.copyright  {
         color: $gray;
     }
 }
+
+.footerFlex .footerBlock {
+    input::placeholder {
+            color: $gray;
+            font-size: 0.6rem;
+        }
+}
