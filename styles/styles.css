@@ -301,11 +301,10 @@ h1 {
 }
 
 main.mainContact {
-  background-color: #F6F6F6;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 70vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -315,12 +314,12 @@ main.mainContact {
 }
 
 section.form {
-  background-color: white;
   width: 60%;
   height: 100%;
 }
 
 aside {
+  background-color: #F6F6F6;
   width: 40%;
 }
 aside p {
@@ -790,27 +789,27 @@ section.copyright {
 }
 
 .footerFlex .footerBlock input::-webkit-input-placeholder {
-  color: #999;
+  color: #F6F6F6;
   font-size: 0.6rem;
 }
 
 .footerFlex .footerBlock input::-moz-placeholder {
-  color: #999;
+  color: #F6F6F6;
   font-size: 0.6rem;
 }
 
 .footerFlex .footerBlock input:-ms-input-placeholder {
-  color: #999;
+  color: #F6F6F6;
   font-size: 0.6rem;
 }
 
 .footerFlex .footerBlock input::-ms-input-placeholder {
-  color: #999;
+  color: #F6F6F6;
   font-size: 0.6rem;
 }
 
 .footerFlex .footerBlock input::placeholder {
-  color: #999;
+  color: #F6F6F6;
   font-size: 0.6rem;
 }
 
@@ -928,8 +927,7 @@ section.copyright {
   }
   .mainContact aside.details {
     width: 100%;
-    height: 50vh;
-    margin: 10px 0;
+    padding: 10px 0;
   }
   .mainContact .details .contactDetails {
     display: -webkit-box;
@@ -946,7 +944,6 @@ section.copyright {
         -ms-flex-align: start;
             align-items: flex-start;
     margin: 0 auto;
-    min-height: 50vh;
   }
   .mainContact .details .contactDetails div {
     width: 27%;

@@ -2,18 +2,19 @@
 @use "variables" as *;
 
 main.mainContact {
-    background-color: $whiteShade;
+    background-color: white;
     display: flex;
-    height: 70vh;
+    // height: 70vh;
     justify-content: center;
     align-items: center;
 }
 section.form {
-    background-color: white;
+    // background-color: white;
     width: 60%;
     height: 100%;
 }
 aside {
+    background-color: $whiteShade;
     width: 40%;
     p{
         width: 60%;

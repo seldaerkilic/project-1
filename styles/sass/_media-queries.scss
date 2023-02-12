@@ -119,8 +119,9 @@
 
         aside.details {
             width: 100%;
-            height: 50vh;
-            margin: 10px 0;
+            padding: 10px 0;
+            // height: 50vh;
+            // margin: 10px 0;
         }
 
         .details .contactDetails {
@@ -128,8 +129,9 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-start;
+
             margin: 0 auto;
-            min-height: 50vh;
+            // min-height: 50vh;
             div {
                 width: 27%;
                 p {
