@@ -966,9 +966,69 @@ section.copyright {
 }
 /* Landscape phones and down */
 @media (max-width: 600px) {
-  .navBar {
+  .headerHome ul.navBar {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .recipeSection {
+    width: 90%;
+  }
+  .recipeSection .recipes p {
+    width: 100%;
+  }
+  .recipeSection .recipes button {
+    font-size: 0.6rem;
+    width: auto;
+  }
+  .recipeSection .nutrition.gridItem {
+    width: 100%;
+    padding: 20px 0;
+  }
+  .recipeSection .nutrition.gridItem .imgNutri {
+    margin: 0 20px;
+    width: 30px;
+    height: 30px;
+  }
+  section.about {
+    width: 90%;
+    margin: 0 auto;
+  }
+  section.about h2 {
+    font-size: 1rem;
+  }
+  section.about div.imgAbout {
+    width: 100%;
+  }
+  .recipeSection .gridItem {
+    width: 100%;
+    padding: 20px 0;
+  }
+  .recipeSection .gridItem h2 {
+    margin: 0 auto;
+    font-size: 1rem;
+  }
+  section.quotations {
+    width: 100%;
+  }
+  section.quotations div.clients {
+    width: 100%;
+  }
+  section.quotations div.clients h2 {
+    font-size: 1rem;
+  }
+  section.quotations div.clients div.contentQuote {
+    min-width: 100%;
+  }
+  section.quotations div.clients div.contentQuote p {
+    width: 60%;
+    font-size: 0.65rem;
+    padding: 15px 0 0 0;
+  }
+  section.quotations div.clients div.slider {
+    padding: 15px;
   }
   .imgContainer ul {
     display: -webkit-box;

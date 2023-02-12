@@ -186,10 +186,73 @@
 
 /* Landscape phones and down */
 @media (max-width: 600px) {
-    // Header navBar
-    .navBar {
-            flex-wrap: wrap;
+    // Header navBar 
+    .headerHome ul.navBar {
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
+
+    // Home page Recipe section
+    .recipeSection {
+        width: 90%;
+        .recipes {
+            p {
+                width: 100%;
+            }
+            button {
+                font-size: 0.6rem;
+                width: auto;
+            }
+        }
+        .nutrition.gridItem {
+            width: 100%;
+            padding: 20px 0;
+            .imgNutri {
+                margin: 0 20px;
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+    section.about {
+        width: 90%;
+        margin: 0 auto;
+        h2 {
+            font-size: 1rem;
+        }
+    }
+    section.about div.imgAbout {
+        width: 100%;
+    }
+    .recipeSection .gridItem {
+        width: 100%;
+        padding: 20px 0;
+        h2 {
+            margin: 0 auto;
+            font-size: 1rem;
+        }
+    }
+    section.quotations {
+        width: 100%;
+        div.clients {
+            width: 100%;
+            h2 {
+                font-size: 1rem;
+            }
+            div.contentQuote {
+                min-width: 100%;
+                p {
+                    width: 60%;
+                    font-size: 0.65rem;
+                    padding: 15px 0 0 0;
+                }
+            }
+            div.slider {
+                padding: 15px;
+            }
+        }
+    }
+    
 
     // Home page imgContainer
     .imgContainer ul {
