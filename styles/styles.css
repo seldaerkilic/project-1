@@ -966,7 +966,9 @@ section.copyright {
 }
 /* Landscape phones and down */
 @media (max-width: 600px) {
-  .headerHome ul.navBar {
+  .headerHome ul.navBar,
+  .headerBlog ul.navBar,
+  .headerContact ul.navBar {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: start;

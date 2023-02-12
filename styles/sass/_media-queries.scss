@@ -187,7 +187,9 @@
 /* Landscape phones and down */
 @media (max-width: 600px) {
     // Header navBar 
-    .headerHome ul.navBar {
+    .headerHome ul.navBar,
+    .headerBlog ul.navBar,
+    .headerContact ul.navBar {
         flex-wrap: wrap;
         justify-content: flex-start;
     }
