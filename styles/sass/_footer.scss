@@ -96,5 +96,7 @@ section.copyright  {
     input::placeholder {
             color: $whiteShade;
             font-size: 0.6rem;
+            font-family: $fontLora;
+            font-style: italic;
         }
 }

@@ -140,6 +140,9 @@ main.mainBlog {
     .commentFormContainer {
         margin: 50px 0;
         width: 100%;
+        .subheadComment {
+            font-style: italic;
+        }
     }
     .commentForm {
         width: 100%;
@@ -155,13 +158,13 @@ main.mainBlog {
             input {
                 height: 30px;
                 width: calc((100% / 3.5));
-                border: 2px solid #f6f6f6;
+                border: 2px solid $whiteShade;
             }
             textarea {
                 min-width: 100%;
                 margin: 15px 0;
                 max-height: 200px;
-                border: 2px solid #f6f6f6;
+                border: 2px solid $whiteShade;
             }
             button {
                 width: auto;
@@ -181,6 +184,7 @@ main.mainBlog {
             }
         }
     }
+
 
 
 }

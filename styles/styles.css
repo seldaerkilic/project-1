@@ -247,7 +247,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 96vw;
+  width: 95vw;
   height: 10%;
 }
 
@@ -613,6 +613,9 @@ main.mainBlog .commentFormContainer {
   margin: 50px 0;
   width: 100%;
 }
+main.mainBlog .commentFormContainer .subheadComment {
+  font-style: italic;
+}
 main.mainBlog .commentForm {
   width: 100%;
 }
@@ -637,13 +640,13 @@ main.mainBlog .commentForm form label {
 main.mainBlog .commentForm form input {
   height: 30px;
   width: 28.5714285714%;
-  border: 2px solid #f6f6f6;
+  border: 2px solid #F6F6F6;
 }
 main.mainBlog .commentForm form textarea {
   min-width: 100%;
   margin: 15px 0;
   max-height: 200px;
-  border: 2px solid #f6f6f6;
+  border: 2px solid #F6F6F6;
 }
 main.mainBlog .commentForm form button {
   width: auto;
@@ -786,26 +789,36 @@ section.copyright {
 .footerFlex .footerBlock input::-webkit-input-placeholder {
   color: #F6F6F6;
   font-size: 0.6rem;
+  font-family: "Lora", serif;
+  font-style: italic;
 }
 
 .footerFlex .footerBlock input::-moz-placeholder {
   color: #F6F6F6;
   font-size: 0.6rem;
+  font-family: "Lora", serif;
+  font-style: italic;
 }
 
 .footerFlex .footerBlock input:-ms-input-placeholder {
   color: #F6F6F6;
   font-size: 0.6rem;
+  font-family: "Lora", serif;
+  font-style: italic;
 }
 
 .footerFlex .footerBlock input::-ms-input-placeholder {
   color: #F6F6F6;
   font-size: 0.6rem;
+  font-family: "Lora", serif;
+  font-style: italic;
 }
 
 .footerFlex .footerBlock input::placeholder {
   color: #F6F6F6;
   font-size: 0.6rem;
+  font-family: "Lora", serif;
+  font-style: italic;
 }
 
 /* Final touch for wide desktops */
@@ -1070,12 +1083,24 @@ section.copyright {
     font-size: 1rem;
   }
 }
+@media (max-width: 490px) {
+  .nutrition.gridItem {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nutrition.gridItem .cardNutri {
+    width: 80%;
+    margin: 5px 0;
+  }
+}
 html {
   font-size: 125%;
 }
 
 body {
-  background-color: #F6F6F6;
+  background-color: white;
   line-height: 24px;
 }
 

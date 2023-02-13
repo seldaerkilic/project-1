@@ -276,3 +276,13 @@
     }
 }
 
+// Nutrition box of the flex for mobile
+@media (max-width: 490px) {
+    .nutrition.gridItem {
+        flex-direction: column;
+        .cardNutri {
+            width: 80%;
+            margin: 5px 0;
+        }
+    }
+}
