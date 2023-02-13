@@ -165,11 +165,6 @@
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-    // Blog page comment form
-    div.topInputs {
-            flex-direction: column;
-            align-items: flex-start;
-        }
 
     // Contact page
     aside.details .contactDetails {

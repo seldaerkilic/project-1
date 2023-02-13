@@ -615,6 +615,7 @@ main.mainBlog .commentFormContainer {
 }
 main.mainBlog .commentFormContainer .subheadComment {
   font-style: italic;
+  font-size: 18px;
 }
 main.mainBlog .commentForm {
   width: 100%;
@@ -978,15 +979,6 @@ section.copyright {
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-  div.topInputs {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
   aside.details .contactDetails {
     -ms-flex-pack: distribute;
         justify-content: space-around;
