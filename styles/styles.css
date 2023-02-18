@@ -874,16 +874,6 @@ section.copyright {
     right: 95px;
   }
   .navFlex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
     padding: 30px;
   }
   .navBar {
@@ -976,6 +966,65 @@ section.copyright {
   section.footer .footerFlex .footerBlock legend {
     padding-top: 0;
   }
+  .menu {
+    position: fixed;
+    display: block;
+    right: 20px;
+    padding: 20px;
+    background-color: #64a604;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  .menu .bar {
+    width: 25px;
+    height: 2px;
+    background-color: #333;
+    margin: 3px 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  .menu.open {
+    right: -45px;
+    position: relative;
+  }
+  .menu.open .bar-1 {
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+  }
+  .menu.open .bar-2 {
+    opacity: 0;
+  }
+  .menu.open .bar-3 {
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+    margin-top: -10px;
+  }
+  .navBar {
+    height: 0;
+    overflow: hidden;
+  }
+  .navBar li {
+    margin: 0;
+    padding: 0;
+  }
+  .navBar.navList {
+    height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-transition: height 0.4s;
+    transition: height 0.4s;
+    position: absolute;
+    top: 70px;
+    right: 50px;
+  }
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
@@ -993,15 +1042,6 @@ section.copyright {
 }
 /* Landscape phones and down */
 @media (max-width: 600px) {
-  .headerHome ul.navBar,
-  .headerBlog ul.navBar,
-  .headerContact ul.navBar {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
   .recipeSection {
     width: 90%;
   }
