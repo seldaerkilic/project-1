@@ -173,6 +173,7 @@
             background-color: $darkGreen;
             border-radius: 15px;
             cursor: pointer;
+            z-index: 2;
 
             .bar {
                 width: 25px;
@@ -219,6 +220,28 @@
             position: absolute;
             top: 70px;
             right: 50px;
+            z-index: 2;
+            li {
+                text-shadow: 1px 1px 2px white;
+            }
+        }
+
+        .menuBackground {
+            width: 0;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .menuBackground.greenShade {
+            background-color: $darkGreen;
+            opacity: 60%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 150px;
+            height: 400px;
+            z-index: 1;
+            border-radius: 10px 0 0 10px;
         }
 
 }
