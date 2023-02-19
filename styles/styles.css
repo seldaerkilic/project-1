@@ -1449,9 +1449,9 @@ section.quotations .qMarkClose {
   right: 0;
 }
 section.quotations .slider {
-  height: 70%;
+  height: 70px;
   width: 50%;
-  padding: 30px;
+  padding: 10px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1465,6 +1465,12 @@ section.quotations .slider {
 }
 section.quotations .slider .arrowLeft,
 section.quotations .slider .arrowRight {
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
+  color: #F6F6F6;
+  opacity: 70%;
+}
+section.quotations .slider .arrowLeft:hover,
+section.quotations .slider .arrowRight:hover {
+  color: white;
 }
