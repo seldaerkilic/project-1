@@ -1,6 +1,6 @@
 // First JS feature: Create hamburger menu for @media mex-width 940px. 
 // Got help from a Youtube Video. I feel like the code relies on CSS more than JS. 
-// Come back to the menu again.
+// Come back to the menu again, and fix the positioning of menu items on scroll down.
 
 const menu = document.querySelector('.menu');
 const nav = document.querySelector('.navBar');
@@ -12,63 +12,57 @@ menu.addEventListener('click', () => {
     menuBackground.classList.toggle('greenShade')
 })
 
-
-
-
 // Second JS feature: Carousel slider for home page quotation
 
-// Style notes:
-    // Replace the arrow images with FA icons - having error for fontawesome site- CORS header 'Access-Control-Allow-Origin' missing
-    // Add transition effect for smooth change
+// Replace the arrow images with FA icons - having ERROR for fontawesome site- CORS header 'Access-Control-Allow-Origin' missing
 
-    
 // JS Pseudocode
-// Save values with DOM under an object. Create a property with p elements as array. Then later, use index number to toggle p elements.
+// Save variables with DOM
 
-const quoteSlider = {
-    quotes: Array.from(document.querySelectorAll('.quoteCard')),
-    currentIndex: 0,
-    arrowLeft: document.querySelector('.arrowLeft'),
-    arrowRight: document.querySelector('.arrowRight'),
-};
+const arrowLeft = document.querySelector('.arrowLeft');
+const arrowRight = document.querySelector('.arrowRight');
+
+const para1 = document.getElementById('quoteCard1');
+const para2 = document.getElementById('quoteCard2');
+const para3 = document.getElementById('quoteCard3');
+let currentCard = 1;
 
 // Listen to click event on each arrow, depending on index number create a loop or if statement.
+// Para3 is not showing, and this is far from a JS solution.
 
-// ======================================================
-// RIGHT NOW HAVING ERROR ON EVENT LISTENER HANDLE EVENT. 
-// CHECK THE LOGIC OF IF STATEMENTS, AND HANDLE EVENT.
-// ======================================================
-
-quoteSlider.arrowRight.addEventListener("click", () => {
-    if (currentIndex <= quoteCard.length - 1) {
-        return quoteCard.currentIndex[currentIndex++];
-    } else {
-        return quoteCard.currentIndex[0];
-    }
-});
-
-quoteSlider.arrowLeft.addEventListener("click", () => {
-    if (currentIndex >= quoteCard.length) {
-        return quoteCard.currentIndex[currentIndex--];
-    } else {
-        return quoteCard.currentIndex[0];
-    }
-});
-
-// Define the funtion to call
-function updateQuoteSlider() {
-    // Loop through the quotes and hide others via index number
-    quoteSlider.quotes.forEach((quote, index) => {
-        if (index === quoteSlider.currentIndex) {
-            quote.style.display = 'block';
-        } else {
-            quote.style.display = 'none';
+arrowRight.addEventListener("click", (e) => {
+    e.preventDefault();
+        if (currentCard = 2) {
+            para1.classList.toggle('quoteCard');
+            para2.classList.toggle('quoteCardShow');
+            para3.classList.toggle('quoteCard');
+        } else if (currentCard = 3) {
+            para1.classList.toggle('quoteCard');
+            para2.classList.toggle('quoteCard');
+            para3.classList.toggle('quoteCardShow');
+        } else if (currentCard = 1) {
+            para1.classList.toggle('quoteCardShow');
+            para2.classList.toggle('quoteCard');
+            para3.classList.toggle('quoteCard');
         }
-    });
-}
+});
 
-// Don't for get to call the function
-updateQuoteSlider();
+arrowLeft.addEventListener("click", (e) => {
+    e.preventDefault();
+        if (currentCard = 2) {
+            para1.classList.toggle('quoteCard');
+            para2.classList.toggle('quoteCardShow');
+            para3.classList.toggle('quoteCard');
+        } else if (currentCard = 3) {
+            para1.classList.toggle('quoteCard');
+            para2.classList.toggle('quoteCard');
+            para3.classList.toggle('quoteCardShow');
+        } else if (currentCard = 1) {
+            para1.classList.toggle('quoteCardShow');
+            para2.classList.toggle('quoteCard');
+            para3.classList.toggle('quoteCard');
+        }
+});
 
 
 

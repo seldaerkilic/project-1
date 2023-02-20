@@ -1474,3 +1474,6 @@ section.quotations .slider .arrowLeft:hover,
 section.quotations .slider .arrowRight:hover {
   color: white;
 }
+section.quotations p.quoteCard {
+  display: none;
+}

@@ -220,6 +220,7 @@ section.quotations {
         display: flex;
         justify-content: center;
         align-items: center;
+        
     }
     .contentQuote p {
         padding: 30px;
@@ -278,5 +279,8 @@ section.quotations {
             color: white;
         }
 
+    }
+    p.quoteCard {
+        display: none;
     }
 }
