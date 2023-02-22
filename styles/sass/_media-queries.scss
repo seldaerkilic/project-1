@@ -166,7 +166,7 @@
         // Hamburger menu styles
 
         .menu {
-            position: fixed;
+            position: absolute;
             display: block;
             right: 20px;
             padding: 20px;
@@ -242,6 +242,9 @@
             height: 400px;
             z-index: 1;
             border-radius: 10px 0 0 10px;
+        }
+    .quoteCard {
+            display: none;
         }
 
 }

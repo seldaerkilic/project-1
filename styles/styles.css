@@ -967,7 +967,7 @@ section.copyright {
     padding-top: 0;
   }
   .menu {
-    position: fixed;
+    position: absolute;
     display: block;
     right: 20px;
     padding: 20px;
@@ -1045,6 +1045,9 @@ section.copyright {
     height: 400px;
     z-index: 1;
     border-radius: 10px 0 0 10px;
+  }
+  .quoteCard {
+    display: none;
   }
 }
 /* Landscape phone to portrait tablet */
@@ -1473,7 +1476,4 @@ section.quotations .slider .arrowRight {
 section.quotations .slider .arrowLeft:hover,
 section.quotations .slider .arrowRight:hover {
   color: white;
-}
-section.quotations p.quoteCard {
-  display: none;
 }

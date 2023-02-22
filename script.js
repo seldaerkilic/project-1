@@ -1,6 +1,5 @@
 // First JS feature: Create hamburger menu for @media mex-width 940px. 
-// Got help from a Youtube Video. I feel like the code relies on CSS more than JS. 
-// Come back to the menu again, and fix the positioning of menu items on scroll down.
+// Got help from a Youtube Video on toggling class logic.
 
 const menu = document.querySelector('.menu');
 const nav = document.querySelector('.navBar');
@@ -16,19 +15,47 @@ menu.addEventListener('click', () => {
 
 // Replace the arrow images with FA icons - having ERROR for fontawesome site- CORS header 'Access-Control-Allow-Origin' missing
 
-// JS Pseudocode
 // Save variables with DOM
 
 const arrowLeft = document.querySelector('.arrowLeft');
 const arrowRight = document.querySelector('.arrowRight');
+
+// =============================================================================
+// Saving p elements as array in object and changing the p on each click did not work out, but I still feel like it can. Come back to this!
+
+// const pElement = document.getElementsByClassName('quoteCard')
+// console.log(pElement[1]);
+
+// const para1 = pElement[0]
+// const para3 = pElement[2]
+
+// const pArray = pElement.filter(function(activeQuote) {
+//     return activeQuote = pElement.getElementByClassName('quoteCardShow');
+// })
+// console.log(pArray);
+
+// handleClick() {
+//     for (i = 0; i < 3; i++){
+//         return pElement[i].classList.toggle('quoteCardShow');
+//     }
+//     // if (i === 3){
+//     //     return para1.classList.toggle('quoteCardShow');
+//     // }
+// }
+
+// console.log(handleClick());
+
+// arrowRight.addEventListener('click', handleClick());
+// ========================================================================
 
 const para1 = document.getElementById('quoteCard1');
 const para2 = document.getElementById('quoteCard2');
 const para3 = document.getElementById('quoteCard3');
 let currentCard = 1;
 
-// Listen to click event on each arrow, depending on index number create a loop or if statement.
-// Para3 is not showing, and this is far from a JS solution.
+// Listen to click event on each arrow, change the class of p element to display the content.
+// Somehow it's working for second paragraph, but not working for thirs one.
+// Come back to this!
 
 arrowRight.addEventListener("click", (e) => {
     e.preventDefault();
@@ -63,7 +90,6 @@ arrowLeft.addEventListener("click", (e) => {
             para3.classList.toggle('quoteCard');
         }
 });
-
 
 
 // Third JS feature: Pop-up message when scrolled down. 
